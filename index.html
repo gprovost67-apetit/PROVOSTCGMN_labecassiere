@@ -5,40 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Bécassière · Maison normande & piscine chauffée · 10 min de Honfleur</title>
 <meta name="description" content="La Bécassière : authentique maison de famille normande de 180 m² avec piscine chauffée privée, à 10 minutes de Honfleur (Calvados). Jusqu'à 7 voyageurs.">
+<meta property="og:title" content="La Bécassière · Maison normande & piscine chauffée · 10 min de Honfleur">
+<meta property="og:description" content="Maison de famille normande de 180 m² avec piscine chauffée privée, à 10 minutes de Honfleur. Jusqu'à 7 voyageurs.">
+<meta property="og:image" content="https://labecassiere.com/images/piscine.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://labecassiere.com">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#1b2a21;
-  --green:#2f4734;
-  --green-deep:#1c2c21;
-  --green-soft:#46604e;
-  --bone:#f3efe6;
-  --bone-2:#e8e1d3;
-  --card:#faf7f0;
-  --brass:#b08a46;
-  --brass-soft:#c9a967;
-  --tomette:#a8553a;
-  --line:rgba(27,42,33,.14);
-  --shadow:0 18px 50px -22px rgba(28,44,33,.45);
-  --maxw:1180px;
-  --serif:"Fraunces",Georgia,serif;
-  --sans:"Mulish",system-ui,sans-serif;
+--ink:#1b2a21;
+--green:#2f4734;
+--green-deep:#1c2c21;
+--green-soft:#46604e;
+--bone:#f3efe6;
+--bone-2:#e8e1d3;
+--card:#faf7f0;
+--brass:#b08a46;
+--brass-soft:#c9a967;
+--tomette:#a8553a;
+--line:rgba(27,42,33,.14);
+--shadow:0 18px 50px -22px rgba(28,44,33,.45);
+--maxw:1180px;
+--serif:"Fraunces",Georgia,serif;
+--sans:"Mulish",system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{
-  font-family:var(--sans);color:var(--ink);background:var(--bone);
-  line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;
+font-family:var(--sans);color:var(--ink);background:var(--bone);
+line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;
 }
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
 .eyebrow{
-  font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.6em;
+font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.22em;
+text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.6em;
 }
 .eyebrow::before{content:"";width:26px;height:1px;background:var(--brass);display:inline-block}
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;letter-spacing:-.01em}
@@ -47,9 +53,9 @@ p{max-width:62ch}
 
 /* ---------- HEADER ---------- */
 header{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  transition:background .35s ease,box-shadow .35s ease,padding .35s ease;
-  padding:18px 0;
+position:fixed;top:0;left:0;right:0;z-index:100;
+transition:background .35s ease,box-shadow .35s ease,padding .35s ease;
+padding:18px 0;
 }
 header.scrolled{background:rgba(243,239,230,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line);padding:11px 0}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
@@ -67,16 +73,16 @@ header.scrolled .menu a:hover{color:var(--brass)}
 .lang{display:flex;gap:2px;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:3px;background:rgba(28,44,33,.25)}
 header.scrolled .lang{border-color:var(--line);background:transparent}
 .lang button{
-  font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.05em;cursor:pointer;
-  background:none;border:none;color:var(--bone);padding:4px 8px;border-radius:999px;transition:.2s;
+font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.05em;cursor:pointer;
+background:none;border:none;color:var(--bone);padding:4px 8px;border-radius:999px;transition:.2s;
 }
 header.scrolled .lang button{color:var(--green-soft)}
 .lang button.active{background:var(--brass);color:#fff}
 header.scrolled .lang button.active{color:#fff}
 .btn{
-  font-family:var(--sans);font-size:.82rem;font-weight:700;letter-spacing:.04em;cursor:pointer;
-  display:inline-flex;align-items:center;gap:.5em;padding:12px 22px;border-radius:999px;
-  background:var(--brass);color:#fff;border:1px solid var(--brass);transition:.25s;
+font-family:var(--sans);font-size:.82rem;font-weight:700;letter-spacing:.04em;cursor:pointer;
+display:inline-flex;align-items:center;gap:.5em;padding:12px 22px;border-radius:999px;
+background:var(--brass);color:#fff;border:1px solid var(--brass);transition:.25s;
 }
 .btn:hover{background:#9a763a;border-color:#9a763a;transform:translateY(-1px)}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.55);color:var(--bone)}
@@ -89,20 +95,20 @@ header.scrolled .burger span{background:var(--green-deep)}
 
 /* ---------- HERO ---------- */
 .hero{
-  position:relative;min-height:100vh;display:flex;align-items:flex-end;
-  background:linear-gradient(160deg,#2f4734 0%,#1c2c21 60%,#16241b 100%);
-  overflow:hidden;
+position:relative;min-height:100vh;display:flex;align-items:flex-end;
+background:linear-gradient(160deg,#2f4734 0%,#1c2c21 60%,#16241b 100%);
+overflow:hidden;
 }
 .hero .photo{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(180deg,rgba(20,30,22,.10) 0%,rgba(20,30,22,.30) 45%,rgba(20,30,22,.82) 100%),
-    url('images/jardin-piscine.jpg') center 38%/cover no-repeat;
+position:absolute;inset:0;
+background:
+linear-gradient(180deg,rgba(20,30,22,.10) 0%,rgba(20,30,22,.30) 45%,rgba(20,30,22,.82) 100%),
+url('images/jardin-piscine.jpg') center 38%/cover no-repeat;
 }
 .hero .photo-note{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
-  color:rgba(255,255,255,.28);text-align:center;width:80%;
+position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+color:rgba(255,255,255,.28);text-align:center;width:80%;
 }
 .hero-inner{position:relative;z-index:2;padding:130px 0 64px;max-width:760px}
 .hero h1{font-size:clamp(3rem,9vw,6.2rem);color:var(--bone);line-height:.98;margin:.35rem 0 .4rem}
@@ -111,8 +117,8 @@ header.scrolled .burger span{background:var(--green-deep)}
 .hero .lede{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.55rem);color:rgba(243,239,230,.92);max-width:34ch;margin-bottom:1.6rem}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:2rem}
 .chip{
-  display:inline-flex;align-items:center;gap:.5em;font-size:.8rem;font-weight:600;letter-spacing:.02em;
-  color:var(--bone);border:1px solid rgba(243,239,230,.3);padding:7px 14px;border-radius:999px;
+display:inline-flex;align-items:center;gap:.5em;font-size:.8rem;font-weight:600;letter-spacing:.02em;
+color:var(--bone);border:1px solid rgba(243,239,230,.3);padding:7px 14px;border-radius:999px;
 }
 .chip svg{width:15px;height:15px;stroke:var(--brass-soft);fill:none;stroke-width:1.8}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -131,9 +137,9 @@ section{padding:clamp(64px,9vw,118px) 0}
 .figure.alt{aspect-ratio:4/3}
 .figure img,.g img{width:100%;height:100%;object-fit:cover;display:block}
 .ph{
-  width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-  background:linear-gradient(150deg,#3a533f,#22332700);background-color:#33493a;color:rgba(243,239,230,.6);
-  text-align:center;padding:20px;
+width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+background:linear-gradient(150deg,#3a533f,#22332700);background-color:#33493a;color:rgba(243,239,230,.6);
+text-align:center;padding:20px;
 }
 .ph svg{width:40px;height:40px;stroke:var(--brass-soft);fill:none;stroke-width:1.4;opacity:.8}
 .ph span{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
@@ -166,8 +172,8 @@ section{padding:clamp(64px,9vw,118px) 0}
 .amenities{background:var(--card)}
 .amen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
 .amen{
-  background:var(--bone);border:1px solid var(--line);border-radius:8px;padding:24px;
-  display:flex;gap:15px;align-items:flex-start;transition:.25s;
+background:var(--bone);border:1px solid var(--line);border-radius:8px;padding:24px;
+display:flex;gap:15px;align-items:flex-start;transition:.25s;
 }
 .amen:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:transparent}
 .amen .ic{flex:none;width:42px;height:42px;border-radius:50%;background:rgba(176,138,70,.12);display:flex;align-items:center;justify-content:center}
@@ -178,8 +184,8 @@ section{padding:clamp(64px,9vw,118px) 0}
 /* ---------- ROOMS ---------- */
 .rooms{background:var(--bone)}
 .cap-banner{
-  display:flex;align-items:center;gap:18px;background:var(--green);color:var(--bone);
-  border-radius:10px;padding:20px 26px;margin-top:30px;flex-wrap:wrap;
+display:flex;align-items:center;gap:18px;background:var(--green);color:var(--bone);
+border-radius:10px;padding:20px 26px;margin-top:30px;flex-wrap:wrap;
 }
 .cap-banner svg{width:30px;height:30px;stroke:var(--brass-soft);fill:none;stroke-width:1.6;flex:none}
 .cap-banner b{font-family:var(--serif);font-weight:500;font-size:1.05rem}
@@ -207,6 +213,17 @@ section{padding:clamp(64px,9vw,118px) 0}
 .map{border-radius:10px;overflow:hidden;min-height:340px;border:1px solid rgba(243,239,230,.18)}
 .map iframe{width:100%;height:100%;min-height:340px;border:0;filter:saturate(.9)}
 
+/* ---------- AVIS ---------- */
+.avis{background:var(--card)}
+.avis-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:34px}
+.avis-card{background:var(--bone);border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.avis-card .stars{color:var(--brass);font-size:.9rem;letter-spacing:2px}
+.avis-card .name{font-family:var(--serif);font-size:1.05rem;color:var(--green-deep)}
+.avis-card p{font-size:.9rem;color:var(--green-soft);line-height:1.6;max-width:none}
+.avis-source{margin-top:26px;font-size:.85rem;color:var(--green-soft);text-align:center}
+.avis-source a{color:var(--brass);font-weight:600}
+@media(max-width:880px){.avis-grid{grid-template-columns:1fr}}
+
 /* ---------- BOOK ---------- */
 .book{background:var(--bone)}
 .book-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start;margin-top:10px}
@@ -223,8 +240,8 @@ section{padding:clamp(64px,9vw,118px) 0}
 .field{display:flex;flex-direction:column;gap:5px}
 .field label{font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green-soft)}
 .field input,.field textarea{
-  font-family:var(--sans);font-size:.95rem;padding:12px 14px;border:1px solid var(--line);border-radius:8px;
-  background:var(--card);color:var(--ink);resize:vertical;
+font-family:var(--sans);font-size:.95rem;padding:12px 14px;border:1px solid var(--line);border-radius:8px;
+background:var(--card);color:var(--ink);resize:vertical;
 }
 .field input:focus,.field textarea:focus{outline:2px solid var(--brass);outline-offset:1px;border-color:transparent}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -250,22 +267,22 @@ footer{background:var(--green-deep);color:rgba(243,239,230,.7);padding:54px 0 30
 
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:880px){
-  .menu,.nav-right .btn{display:none}
-  .burger{display:flex}
-  .menu.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;
-    background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
-  .menu.open a{color:var(--green-deep)}
-  .split,.region-grid,.book-grid{grid-template-columns:1fr}
-  .amen-grid,.floors{grid-template-columns:1fr 1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .figure-stack{order:-1}
+.menu,.nav-right .btn{display:none}
+.burger{display:flex}
+.menu.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;
+background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
+.menu.open a{color:var(--green-deep)}
+.split,.region-grid,.book-grid{grid-template-columns:1fr}
+.amen-grid,.floors{grid-template-columns:1fr 1fr}
+.gallery-grid{grid-template-columns:repeat(2,1fr)}
+.figure-stack{order:-1}
 }
 @media(max-width:560px){
-  .wrap{padding:0 20px}
-  .amen-grid,.floors,.two{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:1fr;grid-auto-rows:180px}
-  .g.wide{grid-column:span 1}.g.tall{grid-row:span 1}
-  .pool-stats{gap:22px}
+.wrap{padding:0 20px}
+.amen-grid,.floors,.two{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:1fr;grid-auto-rows:180px}
+.g.wide{grid-column:span 1}.g.tall{grid-row:span 1}
+.pool-stats{gap:22px}
 }
 </style>
 </head>
@@ -273,461 +290,519 @@ footer{background:var(--green-deep);color:rgba(243,239,230,.7);padding:54px 0 30
 
 <!-- ============ HEADER ============ -->
 <header id="hdr">
-  <div class="wrap nav">
-    <a href="#hero" class="brand" aria-label="La Bécassière">
-      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
-        <!-- bécasse stylisée : corps + long bec + œil -->
-        <path d="M20 64 C24 46 40 40 56 44 C66 47 74 54 80 50"/>
-        <path d="M80 50 L96 44"/>
-        <path d="M30 63 L24 80 M44 60 L40 80"/>
-        <line x1="60" y1="46" x2="60" y2="46"/>
-      </svg>
-      <span class="name">La Bécassière</span>
-    </a>
-    <ul class="menu" id="menu">
-      <li><a href="#maison" data-i18n="nav_house"></a></li>
-      <li><a href="#piscine" data-i18n="nav_pool"></a></li>
-      <li><a href="#galerie" data-i18n="nav_gallery"></a></li>
-      <li><a href="#chambres" data-i18n="nav_rooms"></a></li>
-      <li><a href="#region" data-i18n="nav_region"></a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang" id="lang" role="group" aria-label="Langue">
-        <button data-lang="fr" class="active">FR</button>
-        <button data-lang="en">EN</button>
-        <button data-lang="de">DE</button>
-        <button data-lang="sv">SV</button>
-      </div>
-      <a href="#reserver" class="btn" data-i18n="nav_book"></a>
-      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
+<div class="wrap nav">
+<a href="#hero" class="brand" aria-label="La Bécassière">
+<svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+<!-- bécasse stylisée : corps + long bec + œil -->
+<path d="M20 64 C24 46 40 40 56 44 C66 47 74 54 80 50"/>
+<path d="M80 50 L96 44"/>
+<path d="M30 63 L24 80 M44 60 L40 80"/>
+<line x1="60" y1="46" x2="60" y2="46"/>
+</svg>
+<span class="name">La Bécassière</span>
+</a>
+<ul class="menu" id="menu">
+<li><a href="#maison" data-i18n="nav_house"></a></li>
+<li><a href="#piscine" data-i18n="nav_pool"></a></li>
+<li><a href="#galerie" data-i18n="nav_gallery"></a></li>
+<li><a href="#chambres" data-i18n="nav_rooms"></a></li>
+<li><a href="#avis" data-i18n="nav_avis"></a></li>
+<li><a href="#region" data-i18n="nav_region"></a></li>
+</ul>
+<div class="nav-right">
+<div class="lang" id="lang" role="group" aria-label="Langue">
+<button data-lang="fr" class="active">FR</button>
+<button data-lang="en">EN</button>
+<button data-lang="de">DE</button>
+<button data-lang="sv">SV</button>
+</div>
+<a href="#reserver" class="btn" data-i18n="nav_book"></a>
+<button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+</div>
 </header>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero">
-  <div class="photo"></div>
-  <div class="wrap hero-inner">
-    <span class="eyebrow" data-i18n="hero_eyebrow"></span>
-    <h1>La Bécassière</h1>
-    <p class="lede" data-i18n="hero_lede"></p>
-    <div class="chips">
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg><span data-i18n="chip_size"></span></span>
-      <span class="chip"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5M15 18c0-2 2-3.5 4-3.5s2.8 1 2.8 1"/></svg><span data-i18n="chip_guests"></span></span>
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M3 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0M3 13c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></svg><span data-i18n="chip_pool"></span></span>
-      <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 22V8M12 8c0-3 2-5 5-5 0 3-2 5-5 5zM12 11c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg><span data-i18n="chip_garden"></span></span>
-    </div>
-    <div class="hero-cta">
-      <a href="#reserver" class="btn" data-i18n="hero_cta"></a>
-      <a href="#maison" class="btn ghost" data-i18n="hero_cta2"></a>
-    </div>
-  </div>
-  <div class="scroll-cue"><span data-i18n="scroll"></span><span class="line"></span></div>
+<div class="photo"></div>
+<div class="wrap hero-inner">
+<span class="eyebrow" data-i18n="hero_eyebrow"></span>
+<h1>La Bécassière</h1>
+<p class="lede" data-i18n="hero_lede"></p>
+<div class="chips">
+<span class="chip"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg><span data-i18n="chip_size"></span></span>
+<span class="chip"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5M15 18c0-2 2-3.5 4-3.5s2.8 1 2.8 1"/></svg><span data-i18n="chip_guests"></span></span>
+<span class="chip"><svg viewBox="0 0 24 24"><path d="M3 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0M3 13c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></svg><span data-i18n="chip_pool"></span></span>
+<span class="chip"><svg viewBox="0 0 24 24"><path d="M12 22V8M12 8c0-3 2-5 5-5 0 3-2 5-5 5zM12 11c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg><span data-i18n="chip_garden"></span></span>
+</div>
+<div class="hero-cta">
+<a href="#reserver" class="btn" data-i18n="hero_cta"></a>
+<a href="#maison" class="btn ghost" data-i18n="hero_cta2"></a>
+</div>
+</div>
+<div class="scroll-cue"><span data-i18n="scroll"></span><span class="line"></span></div>
 </section>
 
 <!-- ============ LA MAISON ============ -->
 <section class="lead-section" id="maison">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="house_eyebrow"></span>
-      <h2 class="section-title" data-i18n="house_title"></h2>
-      <p data-i18n="house_p1"></p>
-      <p data-i18n="house_p2"></p>
-    </div>
-    <div class="figure-stack reveal">
-      <div class="figure alt">
-        <img src="images/facade.jpg" alt="La Becassiere - facade normande a colombages">
-      </div>
-    </div>
-  </div>
+<div class="wrap split">
+<div class="reveal">
+<span class="eyebrow" data-i18n="house_eyebrow"></span>
+<h2 class="section-title" data-i18n="house_title"></h2>
+<p data-i18n="house_p1"></p>
+<p data-i18n="house_p2"></p>
+</div>
+<div class="figure-stack reveal">
+<div class="figure alt">
+<img src="images/facade.jpg" alt="La Becassiere - facade normande a colombages">
+</div>
+</div>
+</div>
 </section>
 
 <!-- ============ PISCINE ============ -->
 <section class="pool" id="piscine">
-  <div class="wrap split">
-    <div class="figure-stack reveal">
-      <div class="figure alt">
-        <img src="images/piscine.jpg" alt="Piscine chauffee de La Becassiere">
-      </div>
-    </div>
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="pool_eyebrow"></span>
-      <h2 class="section-title" data-i18n="pool_title"></h2>
-      <p data-i18n="pool_p"></p>
-      <div class="pool-stats">
-        <div><div class="n">12 × 5</div><div class="l" data-i18n="pool_s1"></div></div>
-        <div><div class="n">28°C</div><div class="l" data-i18n="pool_s2"></div></div>
-        <div><div class="n" data-i18n="pool_s3n"></div><div class="l" data-i18n="pool_s3"></div></div>
-      </div>
-    </div>
-  </div>
+<div class="wrap split">
+<div class="figure-stack reveal">
+<div class="figure alt">
+<img src="images/piscine.jpg" alt="Piscine chauffee de La Becassiere">
+</div>
+</div>
+<div class="reveal">
+<span class="eyebrow" data-i18n="pool_eyebrow"></span>
+<h2 class="section-title" data-i18n="pool_title"></h2>
+<p data-i18n="pool_p"></p>
+<div class="pool-stats">
+<div><div class="n">12 × 5</div><div class="l" data-i18n="pool_s1"></div></div>
+<div><div class="n">28°C</div><div class="l" data-i18n="pool_s2"></div></div>
+<div><div class="n" data-i18n="pool_s3n"></div><div class="l" data-i18n="pool_s3"></div></div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ============ GALERIE ============ -->
 <section class="lead-section" id="galerie">
-  <div class="wrap">
-    <div class="reveal" style="text-align:center">
-      <span class="eyebrow" data-i18n="gal_eyebrow"></span>
-      <h2 class="section-title" data-i18n="gal_title"></h2>
-    </div>
-    <div class="gallery-grid reveal">
-      <div class="g tall"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></div>
-      <div class="g"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></div>
-      <div class="g"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></div>
-      <div class="g"><img src="images/chambre-principale.jpg" alt="Chambre principale" loading="lazy"></div>
-      <div class="g wide"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></div>
-      <div class="g"><img src="images/jardin-piscine.jpg" alt="Jardin terrasse et piscine" loading="lazy"></div>
-      <div class="g"><img src="images/chambre-toile-rouge.jpg" alt="Chambre toile de Jouy" loading="lazy"></div>
-      <div class="g wide"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></div>
-      <div class="g"><img src="images/chambre-enfants.jpg" alt="Chambre enfants" loading="lazy"></div>
-      <div class="g"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></div>
-      <div class="g"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></div>
-      <div class="g"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="reveal" style="text-align:center">
+<span class="eyebrow" data-i18n="gal_eyebrow"></span>
+<h2 class="section-title" data-i18n="gal_title"></h2>
+</div>
+<div class="gallery-grid reveal">
+<div class="g tall"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></div>
+<div class="g"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></div>
+<div class="g"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></div>
+<div class="g"><img src="images/chambre-principale.jpg" alt="Chambre principale" loading="lazy"></div>
+<div class="g wide"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></div>
+<div class="g"><img src="images/jardin-piscine.jpg" alt="Jardin terrasse et piscine" loading="lazy"></div>
+<div class="g"><img src="images/chambre-toile-rouge.jpg" alt="Chambre toile de Jouy" loading="lazy"></div>
+<div class="g wide"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></div>
+<div class="g"><img src="images/chambre-enfants.jpg" alt="Chambre enfants" loading="lazy"></div>
+<div class="g"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></div>
+<div class="g"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></div>
+<div class="g"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></div>
+</div>
+</div>
 </section>
 
 <!-- ============ ÉQUIPEMENTS ============ -->
 <section class="amenities" id="equipements">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="amen_eyebrow"></span>
-      <h2 class="section-title" data-i18n="amen_title"></h2>
-    </div>
-    <div class="amen-grid reveal">
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0M3 13c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></svg></div><div><h3 data-i18n="a1_t"></h3><p data-i18n="a1_d"></p></div></div>
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22V8M12 8c0-3 2-5 5-5 0 3-2 5-5 5zM12 11c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg></div><div><h3 data-i18n="a2_t"></h3><p data-i18n="a2_d"></p></div></div>
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 11h16l-2 8H6zM7 11V8a5 5 0 0110 0v3M12 4V2"/></svg></div><div><h3 data-i18n="a3_t"></h3><p data-i18n="a3_d"></p></div></div>
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 011-1h9l6 5v10a1 1 0 01-1 1H5a1 1 0 01-1-1zM3 8l8 4 8-4"/></svg></div><div><h3 data-i18n="a4_t"></h3><p data-i18n="a4_d"></p></div></div>
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13a14 14 0 0114 0M8.5 16.5a8 8 0 017 0M12 20h.01"/></svg></div><div><h3 data-i18n="a5_t"></h3><p data-i18n="a5_d"></p></div></div>
-      <div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 11V7a3 3 0 013-3h8a3 3 0 013 3v4M3 11h18v6a2 2 0 01-2 2H5a2 2 0 01-2-2zM7 19v2M17 19v2"/></svg></div><div><h3 data-i18n="a6_t"></h3><p data-i18n="a6_d"></p></div></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow" data-i18n="amen_eyebrow"></span>
+<h2 class="section-title" data-i18n="amen_title"></h2>
+</div>
+<div class="amen-grid reveal">
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0M3 13c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/></svg></div><div><h3 data-i18n="a1_t"></h3><p data-i18n="a1_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22V8M12 8c0-3 2-5 5-5 0 3-2 5-5 5zM12 11c0-3-2-5-5-5 0 3 2 5 5 5z"/></svg></div><div><h3 data-i18n="a2_t"></h3><p data-i18n="a2_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 11h16l-2 8H6zM7 11V8a5 5 0 0110 0v3M12 4V2"/></svg></div><div><h3 data-i18n="a3_t"></h3><p data-i18n="a3_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 011-1h9l6 5v10a1 1 0 01-1 1H5a1 1 0 01-1-1zM3 8l8 4 8-4"/></svg></div><div><h3 data-i18n="a4_t"></h3><p data-i18n="a4_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13a14 14 0 0114 0M8.5 16.5a8 8 0 017 0M12 20h.01"/></svg></div><div><h3 data-i18n="a5_t"></h3><p data-i18n="a5_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 11V7a3 3 0 013-3h8a3 3 0 013 3v4M3 11h18v6a2 2 0 01-2 2H5a2 2 0 01-2-2zM7 19v2M17 19v2"/></svg></div><div><h3 data-i18n="a6_t"></h3><p data-i18n="a6_d"></p></div></div>
+</div>
+</div>
 </section>
 
 <div class="divider"><span class="rule"></span><svg viewBox="0 0 100 60"><path d="M18 40 C24 26 42 22 58 26 C68 29 76 35 82 31"/><path d="M82 31 L98 26"/><path d="M30 39 L26 52 M46 36 L42 52"/></svg><span class="rule"></span></div>
 
 <!-- ============ CHAMBRES ============ -->
 <section class="rooms" id="chambres">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="rooms_eyebrow"></span>
-      <h2 class="section-title" data-i18n="rooms_title"></h2>
-      <p style="color:var(--green-soft)" data-i18n="rooms_intro"></p>
-    </div>
-    <div class="cap-banner reveal">
-      <svg viewBox="0 0 24 24"><path d="M3 20v-2a4 4 0 014-4h2M21 20v-2a4 4 0 00-4-4h-1M9 10a3 3 0 100-6 3 3 0 000 6zM16 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg>
-      <div><b data-i18n="cap_b"></b> &nbsp;<span data-i18n="cap_s"></span></div>
-    </div>
-    <div class="floors reveal">
-      <div class="floor"><span class="tag" data-i18n="f1_tag"></span><h3 data-i18n="f1_t"></h3><ul>
-        <li data-i18n="f1_a"></li><li data-i18n="f1_b"></li><li data-i18n="f1_c"></li></ul></div>
-      <div class="floor"><span class="tag" data-i18n="f2_tag"></span><h3 data-i18n="f2_t"></h3><ul>
-        <li data-i18n="f2_a"></li><li data-i18n="f2_b"></li><li data-i18n="f2_c"></li></ul></div>
-      <div class="floor"><span class="tag" data-i18n="f3_tag"></span><h3 data-i18n="f3_t"></h3><ul>
-        <li data-i18n="f3_a"></li><li data-i18n="f3_b"></li><li data-i18n="f3_c"></li></ul></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow" data-i18n="rooms_eyebrow"></span>
+<h2 class="section-title" data-i18n="rooms_title"></h2>
+<p style="color:var(--green-soft)" data-i18n="rooms_intro"></p>
+</div>
+<div class="cap-banner reveal">
+<svg viewBox="0 0 24 24"><path d="M3 20v-2a4 4 0 014-4h2M21 20v-2a4 4 0 00-4-4h-1M9 10a3 3 0 100-6 3 3 0 000 6zM16 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg>
+<div><b data-i18n="cap_b"></b> &nbsp;<span data-i18n="cap_s"></span></div>
+</div>
+<div class="floors reveal">
+<div class="floor"><span class="tag" data-i18n="f1_tag"></span><h3 data-i18n="f1_t"></h3><ul>
+<li data-i18n="f1_a"></li><li data-i18n="f1_b"></li><li data-i18n="f1_c"></li></ul></div>
+<div class="floor"><span class="tag" data-i18n="f2_tag"></span><h3 data-i18n="f2_t"></h3><ul>
+<li data-i18n="f2_a"></li><li data-i18n="f2_b"></li><li data-i18n="f2_c"></li></ul></div>
+<div class="floor"><span class="tag" data-i18n="f3_tag"></span><h3 data-i18n="f3_t"></h3><ul>
+<li data-i18n="f3_a"></li><li data-i18n="f3_b"></li><li data-i18n="f3_c"></li></ul></div>
+</div>
+</div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section class="avis" id="avis">
+<div class="wrap">
+<div class="reveal" style="text-align:center">
+<span class="eyebrow" data-i18n="avis_eyebrow"></span>
+<h2 class="section-title" data-i18n="avis_title"></h2>
+</div>
+<div class="avis-grid reveal">
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Anne-Cécile</div>
+<p data-i18n="avis1"></p>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Valentine</div>
+<p data-i18n="avis2"></p>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Julien</div>
+<p data-i18n="avis3"></p>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Isabelle</div>
+<p data-i18n="avis4"></p>
+</div>
+</div>
+<p class="avis-source" data-i18n="avis_source"></p>
+</div>
 </section>
 
 <!-- ============ RÉGION ============ -->
 <section class="region" id="region">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="reg_eyebrow"></span>
-      <h2 class="section-title" data-i18n="reg_title"></h2>
-    </div>
-    <div class="region-grid">
-      <div class="reveal">
-        <p data-i18n="reg_p"></p>
-        <ul class="poi">
-          <li><span><span class="name">Honfleur</span><span class="desc" data-i18n="poi1_d"></span></span><span class="dist">10 min</span></li>
-          <li><span><span class="name">Deauville · Trouville</span><span class="desc" data-i18n="poi2_d"></span></span><span class="dist">25 min</span></li>
-          <li><span><span class="name" data-i18n="poi3_n"></span><span class="desc" data-i18n="poi3_d"></span></span><span class="dist">5 min</span></li>
-          <li><span><span class="name">Pont de Normandie</span><span class="desc" data-i18n="poi4_d"></span></span><span class="dist">12 min</span></li>
-          <li><span><span class="name" data-i18n="poi5_n"></span><span class="desc" data-i18n="poi5_d"></span></span><span class="dist">2 h</span></li>
-        </ul>
-      </div>
-      <div class="map reveal">
-        <iframe loading="lazy" title="Genneville, Calvados"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C49.45&layer=mapnik&marker=49.405%2C0.255"></iframe>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow" data-i18n="reg_eyebrow"></span>
+<h2 class="section-title" data-i18n="reg_title"></h2>
+</div>
+<div class="region-grid">
+<div class="reveal">
+<p data-i18n="reg_p"></p>
+<ul class="poi">
+<li><span><span class="name">Honfleur</span><span class="desc" data-i18n="poi1_d"></span></span><span class="dist">10 min</span></li>
+<li><span><span class="name">Deauville · Trouville</span><span class="desc" data-i18n="poi2_d"></span></span><span class="dist">25 min</span></li>
+<li><span><span class="name" data-i18n="poi3_n"></span><span class="desc" data-i18n="poi3_d"></span></span><span class="dist">5 min</span></li>
+<li><span><span class="name">Pont de Normandie</span><span class="desc" data-i18n="poi4_d"></span></span><span class="dist">12 min</span></li>
+<li><span><span class="name" data-i18n="poi5_n"></span><span class="desc" data-i18n="poi5_d"></span></span><span class="dist">2 h</span></li>
+</ul>
+</div>
+<div class="map reveal">
+<iframe loading="lazy" title="Genneville, Calvados"
+src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C49.45&layer=mapnik&marker=49.405%2C0.255"></iframe>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ============ RÉSERVER ============ -->
 <section class="book" id="reserver">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow" data-i18n="book_eyebrow"></span>
-      <h2 class="section-title" data-i18n="book_title"></h2>
-    </div>
-    <div class="book-grid">
-      <div class="book-card reveal">
-        <h3 data-i18n="book_card_t"></h3>
-        <p data-i18n="book_card_p"></p>
-        <a class="btn" href="https://www.airbnb.fr/rooms/1688274496753120466" target="_blank" rel="noopener" data-i18n="book_airbnb"></a>
-        <a class="btn ghost" href="#contact-anchor" data-i18n="book_direct" style="border-color:rgba(255,255,255,.5)"></a>
-        <div class="season">
-          <div class="season-row"><span data-i18n="se1"></span><span class="s" data-i18n="se1p"></span></div>
-          <div class="season-row"><span data-i18n="se2"></span><span class="s" data-i18n="se2p"></span></div>
-          <div class="season-row"><span data-i18n="se3"></span><span class="s" data-i18n="se3p"></span></div>
-          <div class="season-row" style="opacity:.7;font-size:.78rem;margin-top:6px"><span data-i18n="se_note"></span></div>
-        </div>
-      </div>
-      <div class="contact-form reveal" id="contact-anchor">
-        <h3 data-i18n="cf_t"></h3>
-        <p data-i18n="cf_p"></p>
-        <div class="two">
-          <div class="field"><label data-i18n="cf_name"></label><input id="cf-name" type="text"></div>
-          <div class="field"><label data-i18n="cf_email"></label><input id="cf-email" type="email"></div>
-        </div>
-        <div class="two">
-          <div class="field"><label data-i18n="cf_dates"></label><input id="cf-dates" type="text" placeholder="—"></div>
-          <div class="field"><label data-i18n="cf_guests"></label><input id="cf-guests" type="text" placeholder="—"></div>
-        </div>
-        <div class="field"><label data-i18n="cf_msg"></label><textarea id="cf-msg" rows="4"></textarea></div>
-        <button class="btn dark" id="cf-send" data-i18n="cf_send"></button>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow" data-i18n="book_eyebrow"></span>
+<h2 class="section-title" data-i18n="book_title"></h2>
+</div>
+<div class="book-grid">
+<div class="book-card reveal">
+<h3 data-i18n="book_card_t"></h3>
+<p data-i18n="book_card_p"></p>
+<a class="btn" href="https://www.airbnb.fr/rooms/1688274496753120466" target="_blank" rel="noopener" data-i18n="book_airbnb"></a>
+<a class="btn ghost" href="#contact-anchor" data-i18n="book_direct" style="border-color:rgba(255,255,255,.5)"></a>
+<div class="season">
+<div class="season-row"><span data-i18n="se1"></span><span class="s" data-i18n="se1p"></span></div>
+<div class="season-row"><span data-i18n="se2"></span><span class="s" data-i18n="se2p"></span></div>
+<div class="season-row"><span data-i18n="se3"></span><span class="s" data-i18n="se3p"></span></div>
+<div class="season-row" style="opacity:.7;font-size:.78rem;margin-top:6px"><span data-i18n="se_note"></span></div>
+</div>
+</div>
+<div class="contact-form reveal" id="contact-anchor">
+<h3 data-i18n="cf_t"></h3>
+<p data-i18n="cf_p"></p>
+<div class="two">
+<div class="field"><label data-i18n="cf_name"></label><input id="cf-name" type="text"></div>
+<div class="field"><label data-i18n="cf_email"></label><input id="cf-email" type="email"></div>
+</div>
+<div class="two">
+<div class="field"><label data-i18n="cf_dates"></label><input id="cf-dates" type="text" placeholder="—"></div>
+<div class="field"><label data-i18n="cf_guests"></label><input id="cf-guests" type="text" placeholder="—"></div>
+</div>
+<div class="field"><label data-i18n="cf_msg"></label><textarea id="cf-msg" rows="4"></textarea></div>
+<button class="btn dark" id="cf-send" data-i18n="cf_send"></button>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <div class="foot-brand">
-          <svg class="mark" viewBox="0 0 100 100"><path d="M20 64 C24 46 40 40 56 44 C66 47 74 54 80 50"/><path d="M80 50 L96 44"/><path d="M30 63 L24 80 M44 60 L40 80"/></svg>
-          <span class="name">La Bécassière</span>
-        </div>
-        <p style="margin-top:12px;max-width:30ch;font-size:.86rem" data-i18n="foot_tag"></p>
-        <span class="badge" style="margin-top:14px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg><span data-i18n="foot_atout"></span></span>
-      </div>
-      <div class="foot-cols">
-        <div class="foot-col">
-          <h4 data-i18n="foot_nav"></h4>
-          <a href="#maison" data-i18n="nav_house"></a>
-          <a href="#piscine" data-i18n="nav_pool"></a>
-          <a href="#chambres" data-i18n="nav_rooms"></a>
-          <a href="#region" data-i18n="nav_region"></a>
-          <a href="#reserver" data-i18n="nav_book"></a>
-        </div>
-        <div class="foot-col">
-          <h4 data-i18n="foot_contact"></h4>
-          <p data-i18n="foot_addr"></p>
-          <a href="mailto:provostcgmn@gmail.com">provostcgmn@gmail.com</a>
-          <a href="tel:+33610059557">+33 6 10 05 95 57</a>
-          <a href="https://www.airbnb.fr/rooms/1688274496753120466" target="_blank" rel="noopener">Airbnb ↗</a>
-        </div>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span data-i18n="foot_legal"></span>
-      <span data-i18n="foot_rights"></span>
-    </div>
-  </div>
+<div class="wrap">
+<div class="foot-top">
+<div>
+<div class="foot-brand">
+<svg class="mark" viewBox="0 0 100 100"><path d="M20 64 C24 46 40 40 56 44 C66 47 74 54 80 50"/><path d="M80 50 L96 44"/><path d="M30 63 L24 80 M44 60 L40 80"/></svg>
+<span class="name">La Bécassière</span>
+</div>
+<p style="margin-top:12px;max-width:30ch;font-size:.86rem" data-i18n="foot_tag"></p>
+<span class="badge" style="margin-top:14px"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21 8 14 2 9.4h7.6z"/></svg><span data-i18n="foot_atout"></span></span>
+</div>
+<div class="foot-cols">
+<div class="foot-col">
+<h4 data-i18n="foot_nav"></h4>
+<a href="#maison" data-i18n="nav_house"></a>
+<a href="#piscine" data-i18n="nav_pool"></a>
+<a href="#chambres" data-i18n="nav_rooms"></a>
+<a href="#region" data-i18n="nav_region"></a>
+<a href="#reserver" data-i18n="nav_book"></a>
+</div>
+<div class="foot-col">
+<h4 data-i18n="foot_contact"></h4>
+<p data-i18n="foot_addr"></p>
+<a href="mailto:provostcgmn@gmail.com">provostcgmn@gmail.com</a>
+<a href="tel:+33610059557">+33 6 10 05 95 57</a>
+<a href="https://www.airbnb.fr/rooms/1688274496753120466" target="_blank" rel="noopener">Airbnb ↗</a>
+</div>
+</div>
+</div>
+<div class="foot-bottom">
+<span data-i18n="foot_legal"></span>
+<span data-i18n="foot_rights"></span>
+</div>
+</div>
 </footer>
 
 <script>
 /* ====== i18n ====== */
 const I18N={
- fr:{
-  nav_house:"La maison",nav_pool:"La piscine",nav_gallery:"Galerie",nav_rooms:"Chambres",nav_region:"La région",nav_book:"Réserver",
-  ph_hero:"Photo de couverture — la piscine chauffée",ph_facade:"Photo — façade & jardin",ph_pool:"Photo — la piscine",
-  hero_eyebrow:"Maison normande · Pays d'Auge",
-  hero_lede:"Maison de famille & piscine chauffée privée, à 10 minutes de Honfleur.",
-  chip_size:"180 m²",chip_guests:"Jusqu'à 7 voyageurs",chip_pool:"Piscine chauffée",chip_garden:"Grand jardin arboré",
-  hero_cta:"Vérifier les disponibilités",hero_cta2:"Découvrir la maison",scroll:"Défiler",
-  house_eyebrow:"L'esprit de la maison",house_title:"Une vraie maison de famille, habitée par le temps",
-  house_p1:"Authentique propriété normande de 180 m² transmise de génération en génération, nichée dans un écrin de nature. Poutres apparentes, tomettes patinées, meubles chinés et souvenirs de famille : <strong>le charme de l'ancien y est pleinement assumé</strong> — tout le contraire d'un logement standardisé.",
-  house_p2:"Fidèle à l'esprit des grandes maisons de chasse normandes, quelques bois de cerf et trophées racontent l'histoire du lieu. Au petit matin, il n'est pas rare d'y croiser biches et chevreuils traversant le jardin. La maison tient son nom des bécasses qui trouvent refuge dans les bois familiaux.",
-  pool_eyebrow:"Le cœur des belles journées",pool_title:"Une piscine chauffée, rien que pour vous",
-  pool_p:"Réservée à l'usage exclusif des voyageurs et entièrement sécurisée (clôture, portillon, rideau électrique), la piscine se profite en toute intimité de mai à septembre, face au calme de la campagne.",
-  pool_s1:"mètres",pool_s2:"eau chauffée",pool_s3n:"Mai–Sept.",pool_s3:"saison de baignade",
-  gal_eyebrow:"En images",gal_title:"Au fil des pièces et du jardin",
-  g_pool:"Piscine",g_living:"Salon & cheminée",g_kitchen:"Cuisine équipée",g_room:"Chambre",g_garden:"Jardin & terrasse",g_bath:"Salle de bain",
-  amen_eyebrow:"Équipements & services",amen_title:"Tout pour un séjour serein",
-  a1_t:"Piscine chauffée privée",a1_d:"12 × 5 m, sécurisée, usage exclusif, ouverte de mai à septembre.",
-  a2_t:"Grand jardin arboré",a2_d:"Terrasse privative, transats, barbecue, plancha et brasero.",
-  a3_t:"Cheminée & poêle à bois",a3_d:"Un salon chaleureux pour les soirées d'arrière-saison.",
-  a4_t:"Cuisine entièrement équipée",a4_d:"Tout le nécessaire pour cuisiner en famille, lave-vaisselle inclus.",
-  a5_t:"WiFi & confort",a5_d:"Connexion internet, télévision et linge de maison fournis.",
-  a6_t:"Parking privé",a6_d:"Stationnement gratuit et sécurisé sur la propriété.",
-  rooms_eyebrow:"Chambres & couchages",rooms_title:"De l'espace pour toute la famille",
-  rooms_intro:"3 chambres réparties sur deux niveaux, pour accueillir confortablement jusqu'à 7 voyageurs.",
-  cap_b:"Jusqu'à 7 voyageurs",cap_s:"— 3 chambres · 2 salles de bain · 180 m² habitables",
-  f1_tag:"Rez-de-chaussée",f1_t:"Espaces de vie",f1_a:"Salon avec cheminée / poêle à bois",f1_b:"Salle à manger & cuisine équipée",f1_c:"WC indépendant",
-  f2_tag:"1ᵉʳ étage",f2_t:"Deux chambres",f2_a:"2 chambres avec lits doubles",f2_b:"Salle de bain",f2_c:"WC séparé",
-  f3_tag:"Rez-de-jardin",f3_t:"Suite & détente",f3_a:"Grande chambre (lit double + couchage d'appoint)",f3_b:"Salle de bain & WC",f3_c:"Coin détente / TV",
-  reg_eyebrow:"La région",reg_title:"Au cœur du Pays d'Auge",
-  reg_p:"Entre mer et bocage, La Bécassière est le point de départ idéal pour explorer la côte normande : ports de pêche, plages élégantes, marchés et villages à colombages.",
-  poi1_d:"Port, vieux bassin, galeries d'art",poi2_d:"Plages, planches & casinos",poi3_n:"Commerces & marché",poi3_d:"Premiers commerces du village",poi4_d:"Vue sur la Seine & le Havre",poi5_n:"Étretat & Côte d'Albâtre",poi5_d:"Falaises spectaculaires",
-  book_eyebrow:"Disponibilités & réservation",book_title:"Réservez votre séjour",
-  book_card_t:"Réservation en ligne",book_card_p:"Consultez le calendrier en temps réel et réservez en quelques clics, paiement sécurisé via Airbnb.",
-  book_airbnb:"Réserver sur Airbnb",book_direct:"Demande directe (séjours longs)",
-  se1:"Haute saison (juil.–août)",se1p:"sur demande",se2:"Moyenne saison (mai, juin, sept.)",se2p:"sur demande",se3:"Basse saison",se3p:"tarif dégressif",
-  se_note:"Séjours longs et hors-saison : tarifs préférentiels sur demande.",
-  cf_t:"Une question, un séjour sur mesure ?",cf_p:"Écrivez-nous directement, nous répondons sous 24 h.",
-  cf_name:"Nom",cf_email:"E-mail",cf_dates:"Dates souhaitées",cf_guests:"Voyageurs",cf_msg:"Message",cf_send:"Envoyer la demande",
-  foot_tag:"Maison de famille normande & piscine chauffée, à 10 min de Honfleur.",
-  foot_atout:"Classement 4★ Atout France — en cours",
-  foot_nav:"Navigation",foot_contact:"Contact",foot_addr:"Genneville, Calvados (14600)",
-  foot_legal:"SARL PROVOST CGMN · Location en meublé de tourisme · Mentions légales",
-  foot_rights:"© 2026 La Bécassière. Tous droits réservés."
- },
- en:{
-  nav_house:"The house",nav_pool:"The pool",nav_gallery:"Gallery",nav_rooms:"Bedrooms",nav_region:"The region",nav_book:"Book",
-  ph_hero:"Cover photo — the heated pool",ph_facade:"Photo — façade & garden",ph_pool:"Photo — the pool",
-  hero_eyebrow:"Norman house · Pays d'Auge",
-  hero_lede:"A family home with a private heated pool, 10 minutes from Honfleur.",
-  chip_size:"180 m²",chip_guests:"Up to 7 guests",chip_pool:"Heated pool",chip_garden:"Large wooded garden",
-  hero_cta:"Check availability",hero_cta2:"Discover the house",scroll:"Scroll",
-  house_eyebrow:"The spirit of the house",house_title:"A true family home, shaped by time",
-  house_p1:"An authentic 180 m² Norman property passed down through generations, nestled in a setting of pure nature. Exposed beams, time-worn terracotta tiles, antique-market finds and family keepsakes: <strong>the charm of the past is fully embraced here</strong> — the very opposite of a standardised rental.",
-  house_p2:"True to the spirit of the great Norman hunting lodges, a few antlers and trophies tell the story of the place. At dawn, you may well spot deer crossing the garden. The house takes its name from the woodcocks (\"bécasses\") that shelter in the family woods.",
-  pool_eyebrow:"The heart of fine days",pool_title:"A heated pool, all to yourselves",
-  pool_p:"For the exclusive use of guests and fully secured (fence, gate, electric cover), the pool can be enjoyed in complete privacy from May to September, overlooking the quiet countryside.",
-  pool_s1:"metres",pool_s2:"heated water",pool_s3n:"May–Sept.",pool_s3:"swimming season",
-  gal_eyebrow:"In pictures",gal_title:"Through the rooms and the garden",
-  g_pool:"Pool",g_living:"Living room & fireplace",g_kitchen:"Fitted kitchen",g_room:"Bedroom",g_garden:"Garden & terrace",g_bath:"Bathroom",
-  amen_eyebrow:"Amenities & services",amen_title:"Everything for a carefree stay",
-  a1_t:"Private heated pool",a1_d:"12 × 5 m, secured, exclusive use, open May to September.",
-  a2_t:"Large wooded garden",a2_d:"Private terrace, sun loungers, barbecue, plancha and fire pit.",
-  a3_t:"Fireplace & wood stove",a3_d:"A warm living room for cooler evenings.",
-  a4_t:"Fully equipped kitchen",a4_d:"Everything you need to cook as a family, dishwasher included.",
-  a5_t:"WiFi & comfort",a5_d:"Internet, television and household linen provided.",
-  a6_t:"Private parking",a6_d:"Free, secure parking on the property.",
-  rooms_eyebrow:"Bedrooms & sleeping",rooms_title:"Room for the whole family",
-  rooms_intro:"3 bedrooms across two levels, comfortably sleeping up to 7 guests.",
-  cap_b:"Up to 7 guests",cap_s:"— 3 bedrooms · 2 bathrooms · 180 m² living space",
-  f1_tag:"Ground floor",f1_t:"Living spaces",f1_a:"Living room with fireplace / wood stove",f1_b:"Dining room & fitted kitchen",f1_c:"Separate WC",
-  f2_tag:"First floor",f2_t:"Two bedrooms",f2_a:"2 bedrooms with double beds",f2_b:"Bathroom",f2_c:"Separate WC",
-  f3_tag:"Garden level",f3_t:"Suite & lounge",f3_a:"Large bedroom (double bed + extra bed)",f3_b:"Bathroom & WC",f3_c:"Lounge / TV area",
-  reg_eyebrow:"The region",reg_title:"In the heart of the Pays d'Auge",
-  reg_p:"Between sea and countryside, La Bécassière is the perfect base to explore the Norman coast: fishing harbours, elegant beaches, markets and half-timbered villages.",
-  poi1_d:"Harbour, old basin, art galleries",poi2_d:"Beaches, boardwalks & casinos",poi3_n:"Shops & market",poi3_d:"Nearest village shops",poi4_d:"Views over the Seine & Le Havre",poi5_n:"Étretat & Alabaster Coast",poi5_d:"Spectacular cliffs",
-  book_eyebrow:"Availability & booking",book_title:"Book your stay",
-  book_card_t:"Online booking",book_card_p:"Check the live calendar and book in a few clicks, with secure payment via Airbnb.",
-  book_airbnb:"Book on Airbnb",book_direct:"Direct enquiry (long stays)",
-  se1:"High season (Jul–Aug)",se1p:"on request",se2:"Mid season (May, Jun, Sep)",se2p:"on request",se3:"Low season",se3p:"reduced rates",
-  se_note:"Long and off-season stays: preferential rates on request.",
-  cf_t:"A question, or a tailor-made stay?",cf_p:"Write to us directly — we reply within 24 hours.",
-  cf_name:"Name",cf_email:"E-mail",cf_dates:"Preferred dates",cf_guests:"Guests",cf_msg:"Message",cf_send:"Send enquiry",
-  foot_tag:"Norman family home & heated pool, 10 min from Honfleur.",
-  foot_atout:"4★ Atout France rating — in progress",
-  foot_nav:"Navigation",foot_contact:"Contact",foot_addr:"Genneville, Calvados (14600), France",
-  foot_legal:"SARL PROVOST CGMN · Furnished tourist rental · Legal notice",
-  foot_rights:"© 2026 La Bécassière. All rights reserved."
- },
- de:{
-  nav_house:"Das Haus",nav_pool:"Der Pool",nav_gallery:"Galerie",nav_rooms:"Zimmer",nav_region:"Die Region",nav_book:"Buchen",
-  ph_hero:"Titelbild — der beheizte Pool",ph_facade:"Foto — Fassade & Garten",ph_pool:"Foto — der Pool",
-  hero_eyebrow:"Normannisches Haus · Pays d'Auge",
-  hero_lede:"Ein Familienhaus mit privatem beheiztem Pool, 10 Minuten von Honfleur.",
-  chip_size:"180 m²",chip_guests:"Bis zu 7 Gäste",chip_pool:"Beheizter Pool",chip_garden:"Großer Garten",
-  hero_cta:"Verfügbarkeit prüfen",hero_cta2:"Das Haus entdecken",scroll:"Scrollen",
-  house_eyebrow:"Der Geist des Hauses",house_title:"Ein echtes Familienhaus, vom Lauf der Zeit geprägt",
-  house_p1:"Ein authentisches normannisches Anwesen von 180 m², über Generationen weitergegeben und eingebettet in reine Natur. Sichtbalken, patinierte Terrakottafliesen, antike Fundstücke und Familienerinnerungen: <strong>der Charme des Alten wird hier voll und ganz gelebt</strong> — das genaue Gegenteil einer standardisierten Unterkunft.",
-  house_p2:"Ganz im Geist der großen normannischen Jagdhäuser erzählen einige Geweihe und Trophäen die Geschichte des Ortes. Im Morgengrauen ziehen nicht selten Rehe durch den Garten. Das Haus verdankt seinen Namen den Waldschnepfen (\"bécasses\"), die in den umliegenden Wäldern Zuflucht finden.",
-  pool_eyebrow:"Das Herz schöner Tage",pool_title:"Ein beheizter Pool, ganz für Sie",
-  pool_p:"Ausschließlich den Gästen vorbehalten und vollständig gesichert (Zaun, Tor, elektrische Abdeckung), lässt sich der Pool von Mai bis September in voller Privatsphäre genießen, mit Blick auf die ruhige Landschaft.",
-  pool_s1:"Meter",pool_s2:"beheiztes Wasser",pool_s3n:"Mai–Sept.",pool_s3:"Badesaison",
-  gal_eyebrow:"In Bildern",gal_title:"Durch die Räume und den Garten",
-  g_pool:"Pool",g_living:"Wohnzimmer & Kamin",g_kitchen:"Einbauküche",g_room:"Schlafzimmer",g_garden:"Garten & Terrasse",g_bath:"Badezimmer",
-  amen_eyebrow:"Ausstattung & Service",amen_title:"Alles für einen sorglosen Aufenthalt",
-  a1_t:"Privater beheizter Pool",a1_d:"12 × 5 m, gesichert, zur alleinigen Nutzung, von Mai bis September geöffnet.",
-  a2_t:"Großer Garten mit Bäumen",a2_d:"Private Terrasse, Liegen, Grill, Plancha und Feuerstelle.",
-  a3_t:"Kamin & Holzofen",a3_d:"Ein gemütliches Wohnzimmer für kühlere Abende.",
-  a4_t:"Voll ausgestattete Küche",a4_d:"Alles zum Kochen für die ganze Familie, Geschirrspüler inklusive.",
-  a5_t:"WLAN & Komfort",a5_d:"Internet, Fernseher und Haushaltswäsche inklusive.",
-  a6_t:"Privatparkplatz",a6_d:"Kostenloses, sicheres Parken auf dem Grundstück.",
-  rooms_eyebrow:"Zimmer & Schlafplätze",rooms_title:"Platz für die ganze Familie",
-  rooms_intro:"3 Schlafzimmer auf zwei Ebenen, komfortabel für bis zu 7 Gäste.",
-  cap_b:"Bis zu 7 Gäste",cap_s:"— 3 Schlafzimmer · 2 Badezimmer · 180 m² Wohnfläche",
-  f1_tag:"Erdgeschoss",f1_t:"Wohnbereiche",f1_a:"Wohnzimmer mit Kamin / Holzofen",f1_b:"Esszimmer & Einbauküche",f1_c:"Separates WC",
-  f2_tag:"1. Obergeschoss",f2_t:"Zwei Schlafzimmer",f2_a:"2 Schlafzimmer mit Doppelbetten",f2_b:"Badezimmer",f2_c:"Separates WC",
-  f3_tag:"Gartengeschoss",f3_t:"Suite & Entspannung",f3_a:"Großes Schlafzimmer (Doppelbett + Zustellbett)",f3_b:"Badezimmer & WC",f3_c:"Lounge / TV-Bereich",
-  reg_eyebrow:"Die Region",reg_title:"Im Herzen des Pays d'Auge",
-  reg_p:"Zwischen Meer und Bocage ist La Bécassière der ideale Ausgangspunkt, um die normannische Küste zu erkunden: Fischerhäfen, elegante Strände, Märkte und Fachwerkdörfer.",
-  poi1_d:"Hafen, altes Becken, Kunstgalerien",poi2_d:"Strände, Promenaden & Casinos",poi3_n:"Geschäfte & Markt",poi3_d:"Nächste Dorfgeschäfte",poi4_d:"Blick auf Seine & Le Havre",poi5_n:"Étretat & Alabasterküste",poi5_d:"Spektakuläre Klippen",
-  book_eyebrow:"Verfügbarkeit & Buchung",book_title:"Buchen Sie Ihren Aufenthalt",
-  book_card_t:"Online buchen",book_card_p:"Sehen Sie den Live-Kalender und buchen Sie in wenigen Klicks, mit sicherer Zahlung über Airbnb.",
-  book_airbnb:"Auf Airbnb buchen",book_direct:"Direkte Anfrage (Langzeit)",
-  se1:"Hochsaison (Jul–Aug)",se1p:"auf Anfrage",se2:"Nebensaison (Mai, Jun, Sep)",se2p:"auf Anfrage",se3:"Vorsaison",se3p:"reduzierte Preise",
-  se_note:"Lang- und Nebensaison-Aufenthalte: Vorzugspreise auf Anfrage.",
-  cf_t:"Eine Frage oder ein maßgeschneiderter Aufenthalt?",cf_p:"Schreiben Sie uns direkt — wir antworten innerhalb von 24 Stunden.",
-  cf_name:"Name",cf_email:"E-Mail",cf_dates:"Wunschtermine",cf_guests:"Gäste",cf_msg:"Nachricht",cf_send:"Anfrage senden",
-  foot_tag:"Normannisches Familienhaus & beheizter Pool, 10 Min von Honfleur.",
-  foot_atout:"4★ Atout-France-Klassifizierung — in Bearbeitung",
-  foot_nav:"Navigation",foot_contact:"Kontakt",foot_addr:"Genneville, Calvados (14600), Frankreich",
-  foot_legal:"SARL PROVOST CGMN · Möblierte Ferienvermietung · Impressum",
-  foot_rights:"© 2026 La Bécassière. Alle Rechte vorbehalten."
- },
- sv:{
-  nav_house:"Huset",nav_pool:"Poolen",nav_gallery:"Galleri",nav_rooms:"Sovrum",nav_region:"Regionen",nav_book:"Boka",
-  ph_hero:"Omslagsbild — den uppvärmda poolen",ph_facade:"Foto — fasad & trädgård",ph_pool:"Foto — poolen",
-  hero_eyebrow:"Normandiskt hus · Pays d'Auge",
-  hero_lede:"Ett familjehus med privat uppvärmd pool, 10 minuter från Honfleur.",
-  chip_size:"180 m²",chip_guests:"Upp till 7 gäster",chip_pool:"Uppvärmd pool",chip_garden:"Stor trädgård",
-  hero_cta:"Se tillgänglighet",hero_cta2:"Upptäck huset",scroll:"Scrolla",
-  house_eyebrow:"Husets själ",house_title:"Ett äkta familjehus, format av tiden",
-  house_p1:"En autentisk normandisk egendom på 180 m², nedärvd genom generationer och inbäddad i ren natur. Synliga bjälkar, patinerat tegelgolv, loppisfynd och familjeminnen: <strong>här omfamnas det gamlas charm fullt ut</strong> — raka motsatsen till ett standardiserat boende.",
-  house_p2:"Troget andan i Normandies stora jaktgårdar berättar några horn och troféer platsens historia. I gryningen är det inte ovanligt att se rådjur korsa trädgården. Huset har fått sitt namn efter morkullorna (\"bécasses\") som söker skydd i de omgivande skogarna.",
-  pool_eyebrow:"Hjärtat i de fina dagarna",pool_title:"En uppvärmd pool, helt för er",
-  pool_p:"Reserverad enbart för gästerna och helt säkrad (staket, grind, eldriven täckning) kan poolen njutas i full avskildhet från maj till september, med utsikt över den lugna landsbygden.",
-  pool_s1:"meter",pool_s2:"uppvärmt vatten",pool_s3n:"Maj–sept.",pool_s3:"badsäsong",
-  gal_eyebrow:"I bilder",gal_title:"Genom rummen och trädgården",
-  g_pool:"Pool",g_living:"Vardagsrum & öppen spis",g_kitchen:"Fullt kök",g_room:"Sovrum",g_garden:"Trädgård & terrass",g_bath:"Badrum",
-  amen_eyebrow:"Bekvämligheter & service",amen_title:"Allt för en bekymmersfri vistelse",
-  a1_t:"Privat uppvärmd pool",a1_d:"12 × 5 m, säkrad, enskild användning, öppen maj till september.",
-  a2_t:"Stor trädgård med träd",a2_d:"Privat terrass, solstolar, grill, plancha och eldstad.",
-  a3_t:"Öppen spis & vedkamin",a3_d:"Ett varmt vardagsrum för svalare kvällar.",
-  a4_t:"Fullt utrustat kök",a4_d:"Allt du behöver för att laga mat med familjen, diskmaskin ingår.",
-  a5_t:"WiFi & komfort",a5_d:"Internet, TV och hushållslinne ingår.",
-  a6_t:"Privat parkering",a6_d:"Gratis och säker parkering på fastigheten.",
-  rooms_eyebrow:"Sovrum & sängplatser",rooms_title:"Plats för hela familjen",
-  rooms_intro:"3 sovrum på två plan, bekväma för upp till 7 gäster.",
-  cap_b:"Upp till 7 gäster",cap_s:"— 3 sovrum · 2 badrum · 180 m² boyta",
-  f1_tag:"Bottenvåning",f1_t:"Vardagsutrymmen",f1_a:"Vardagsrum med öppen spis / vedkamin",f1_b:"Matsal & fullt kök",f1_c:"Separat WC",
-  f2_tag:"Övervåning",f2_t:"Två sovrum",f2_a:"2 sovrum med dubbelsängar",f2_b:"Badrum",f2_c:"Separat WC",
-  f3_tag:"Trädgårdsplan",f3_t:"Svit & avkoppling",f3_a:"Stort sovrum (dubbelsäng + extrasäng)",f3_b:"Badrum & WC",f3_c:"Lounge / TV-hörna",
-  reg_eyebrow:"Regionen",reg_title:"I hjärtat av Pays d'Auge",
-  reg_p:"Mellan hav och landsbygd är La Bécassière den perfekta utgångspunkten för att utforska Normandies kust: fiskehamnar, eleganta stränder, marknader och korsvirkesbyar.",
-  poi1_d:"Hamn, gamla bassängen, konstgallerier",poi2_d:"Stränder, strandpromenader & kasinon",poi3_n:"Butiker & marknad",poi3_d:"Närmaste byns butiker",poi4_d:"Utsikt över Seine & Le Havre",poi5_n:"Étretat & Alabasterkusten",poi5_d:"Spektakulära klippor",
-  book_eyebrow:"Tillgänglighet & bokning",book_title:"Boka din vistelse",
-  book_card_t:"Boka online",book_card_p:"Se kalendern i realtid och boka med några klick, säker betalning via Airbnb.",
-  book_airbnb:"Boka på Airbnb",book_direct:"Direktförfrågan (längre vistelser)",
-  se1:"Högsäsong (jul–aug)",se1p:"på begäran",se2:"Mellansäsong (maj, jun, sep)",se2p:"på begäran",se3:"Lågsäsong",se3p:"reducerade priser",
-  se_note:"Längre och lågsäsongsvistelser: förmånliga priser på begäran.",
-  cf_t:"En fråga eller en skräddarsydd vistelse?",cf_p:"Skriv direkt till oss — vi svarar inom 24 timmar.",
-  cf_name:"Namn",cf_email:"E-post",cf_dates:"Önskade datum",cf_guests:"Gäster",cf_msg:"Meddelande",cf_send:"Skicka förfrågan",
-  foot_tag:"Normandiskt familjehus & uppvärmd pool, 10 min från Honfleur.",
-  foot_atout:"4★ Atout France-klassning — pågår",
-  foot_nav:"Navigering",foot_contact:"Kontakt",foot_addr:"Genneville, Calvados (14600), Frankrike",
-  foot_legal:"SARL PROVOST CGMN · Möblerad turistuthyrning · Juridisk information",
-  foot_rights:"© 2026 La Bécassière. Alla rättigheter förbehållna."
- }
+fr:{
+nav_house:"La maison",nav_pool:"La piscine",nav_gallery:"Galerie",nav_rooms:"Chambres",nav_avis:"Avis",nav_region:"La région",nav_book:"Réserver",
+ph_hero:"Photo de couverture — la piscine chauffée",ph_facade:"Photo — façade & jardin",ph_pool:"Photo — la piscine",
+hero_eyebrow:"Maison normande · Pays d'Auge",
+hero_lede:"Maison de famille & piscine chauffée privée, à 10 minutes de Honfleur.",
+chip_size:"180 m²",chip_guests:"Jusqu'à 7 voyageurs",chip_pool:"Piscine chauffée",chip_garden:"Grand jardin arboré",
+hero_cta:"Vérifier les disponibilités",hero_cta2:"Découvrir la maison",scroll:"Défiler",
+house_eyebrow:"L'esprit de la maison",house_title:"Une vraie maison de famille, habitée par le temps",
+house_p1:"Authentique propriété normande de 180 m² transmise de génération en génération, nichée dans un écrin de nature. Poutres apparentes, tomettes patinées, meubles chinés et souvenirs de famille : <strong>le charme de l'ancien y est pleinement assumé</strong> — tout le contraire d'un logement standardisé.",
+house_p2:"Fidèle à l'esprit des grandes maisons de chasse normandes, quelques bois de cerf et trophées racontent l'histoire du lieu. Au petit matin, il n'est pas rare d'y croiser biches et chevreuils traversant le jardin. La maison tient son nom des bécasses qui trouvent refuge dans les bois familiaux.",
+pool_eyebrow:"Le cœur des belles journées",pool_title:"Une piscine chauffée, rien que pour vous",
+pool_p:"Réservée à l'usage exclusif des voyageurs et entièrement sécurisée (clôture, portillon, rideau électrique), la piscine se profite en toute intimité de mai à septembre, face au calme de la campagne.",
+pool_s1:"mètres",pool_s2:"eau chauffée",pool_s3n:"Mai–Sept.",pool_s3:"saison de baignade",
+gal_eyebrow:"En images",gal_title:"Au fil des pièces et du jardin",
+g_pool:"Piscine",g_living:"Salon & cheminée",g_kitchen:"Cuisine équipée",g_room:"Chambre",g_garden:"Jardin & terrasse",g_bath:"Salle de bain",
+amen_eyebrow:"Équipements & services",amen_title:"Tout pour un séjour serein",
+a1_t:"Piscine chauffée privée",a1_d:"12 × 5 m, sécurisée, usage exclusif, ouverte de mai à septembre.",
+a2_t:"Grand jardin arboré",a2_d:"Terrasse privative, transats, barbecue, plancha et brasero.",
+a3_t:"Cheminée & poêle à bois",a3_d:"Un salon chaleureux pour les soirées d'arrière-saison.",
+a4_t:"Cuisine entièrement équipée",a4_d:"Tout le nécessaire pour cuisiner en famille, lave-vaisselle inclus.",
+a5_t:"WiFi & confort",a5_d:"Connexion internet, télévision et linge de maison fournis.",
+a6_t:"Parking privé",a6_d:"Stationnement gratuit et sécurisé sur la propriété.",
+rooms_eyebrow:"Chambres & couchages",rooms_title:"De l'espace pour toute la famille",
+rooms_intro:"3 chambres réparties sur deux niveaux, pour accueillir confortablement jusqu'à 7 voyageurs.",
+cap_b:"Jusqu'à 7 voyageurs",cap_s:"— 3 chambres · 2 salles de bain · 180 m² habitables",
+f1_tag:"Rez-de-chaussée",f1_t:"Espaces de vie",f1_a:"Salon avec cheminée / poêle à bois",f1_b:"Salle à manger & cuisine équipée",f1_c:"WC indépendant",
+f2_tag:"1ᵉʳ étage",f2_t:"Deux chambres",f2_a:"2 chambres avec lits doubles",f2_b:"Salle de bain",f2_c:"WC séparé",
+f3_tag:"Rez-de-jardin",f3_t:"Suite & détente",f3_a:"Grande chambre (lit double + couchage d'appoint)",f3_b:"Salle de bain & WC",f3_c:"Coin détente / TV",
+avis_eyebrow:"Ils y sont allés",avis_title:"Ce qu'en disent nos voyageurs",
+avis1:"Nous avons beaucoup aimé notre séjour à La Bécassière. Une maison très agréable, avec de beaux volumes et une atmosphère chaleureuse. La piscine chauffée a été particulièrement appréciée.",
+avis2:"Maison vraiment charmante ! Bien décorée, spacieuse et très confortable. Nous nous y sommes sentis comme chez nous dès notre arrivée. Nous recommandons sans hésiter.",
+avis3:"Belle et charmante maison. Jardin et piscine incroyables. Le meilleur hébergement pour passer un week-end calme et inspirant.",
+avis4:"Séjour parfait. Très belle maison, piscine au top.",
+avis_source:"Avis vérifiés Airbnb — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">voir tous les avis ↗</a>",
+reg_eyebrow:"La région",reg_title:"Au cœur du Pays d'Auge",
+reg_p:"Entre mer et bocage, La Bécassière est le point de départ idéal pour explorer la côte normande : ports de pêche, plages élégantes, marchés et villages à colombages.",
+poi1_d:"Port, vieux bassin, galeries d'art",poi2_d:"Plages, planches & casinos",poi3_n:"Commerces & marché",poi3_d:"Premiers commerces du village",poi4_d:"Vue sur la Seine & le Havre",poi5_n:"Étretat & Côte d'Albâtre",poi5_d:"Falaises spectaculaires",
+book_eyebrow:"Disponibilités & réservation",book_title:"Réservez votre séjour",
+book_card_t:"Réservation en ligne",book_card_p:"Consultez le calendrier en temps réel et réservez en quelques clics, paiement sécurisé via Airbnb.",
+book_airbnb:"Réserver sur Airbnb",book_direct:"Demande directe (séjours longs)",
+se1:"Haute saison (juil.–août)",se1p:"sur demande",se2:"Moyenne saison (mai, juin, sept.)",se2p:"sur demande",se3:"Basse saison",se3p:"tarif dégressif",
+se_note:"Séjours longs et hors-saison : tarifs préférentiels sur demande.",
+cf_t:"Une question, un séjour sur mesure ?",cf_p:"Écrivez-nous directement, nous répondons sous 24 h.",
+cf_name:"Nom",cf_email:"E-mail",cf_dates:"Dates souhaitées",cf_guests:"Voyageurs",cf_msg:"Message",cf_send:"Envoyer la demande",
+foot_tag:"Maison de famille normande & piscine chauffée, à 10 min de Honfleur.",
+foot_atout:"Classement 4★ Atout France — en cours",
+foot_nav:"Navigation",foot_contact:"Contact",foot_addr:"Genneville, Calvados (14600)",
+foot_legal:"SARL PROVOST CGMN · Location en meublé de tourisme · Mentions légales",
+foot_rights:"© 2026 La Bécassière. Tous droits réservés."
+},
+en:{
+nav_house:"The house",nav_pool:"The pool",nav_gallery:"Gallery",nav_rooms:"Bedrooms",nav_avis:"Reviews",nav_region:"The region",nav_book:"Book",
+ph_hero:"Cover photo — the heated pool",ph_facade:"Photo — façade & garden",ph_pool:"Photo — the pool",
+hero_eyebrow:"Norman house · Pays d'Auge",
+hero_lede:"A family home with a private heated pool, 10 minutes from Honfleur.",
+chip_size:"180 m²",chip_guests:"Up to 7 guests",chip_pool:"Heated pool",chip_garden:"Large wooded garden",
+hero_cta:"Check availability",hero_cta2:"Discover the house",scroll:"Scroll",
+house_eyebrow:"The spirit of the house",house_title:"A true family home, shaped by time",
+house_p1:"An authentic 180 m² Norman property passed down through generations, nestled in a setting of pure nature. Exposed beams, time-worn terracotta tiles, antique-market finds and family keepsakes: <strong>the charm of the past is fully embraced here</strong> — the very opposite of a standardised rental.",
+house_p2:"True to the spirit of the great Norman hunting lodges, a few antlers and trophies tell the story of the place. At dawn, you may well spot deer crossing the garden. The house takes its name from the woodcocks (\"bécasses\") that shelter in the family woods.",
+pool_eyebrow:"The heart of fine days",pool_title:"A heated pool, all to yourselves",
+pool_p:"For the exclusive use of guests and fully secured (fence, gate, electric cover), the pool can be enjoyed in complete privacy from May to September, overlooking the quiet countryside.",
+pool_s1:"metres",pool_s2:"heated water",pool_s3n:"May–Sept.",pool_s3:"swimming season",
+gal_eyebrow:"In pictures",gal_title:"Through the rooms and the garden",
+g_pool:"Pool",g_living:"Living room & fireplace",g_kitchen:"Fitted kitchen",g_room:"Bedroom",g_garden:"Garden & terrace",g_bath:"Bathroom",
+amen_eyebrow:"Amenities & services",amen_title:"Everything for a carefree stay",
+a1_t:"Private heated pool",a1_d:"12 × 5 m, secured, exclusive use, open May to September.",
+a2_t:"Large wooded garden",a2_d:"Private terrace, sun loungers, barbecue, plancha and fire pit.",
+a3_t:"Fireplace & wood stove",a3_d:"A warm living room for cooler evenings.",
+a4_t:"Fully equipped kitchen",a4_d:"Everything you need to cook as a family, dishwasher included.",
+a5_t:"WiFi & comfort",a5_d:"Internet, television and household linen provided.",
+a6_t:"Private parking",a6_d:"Free, secure parking on the property.",
+rooms_eyebrow:"Bedrooms & sleeping",rooms_title:"Room for the whole family",
+rooms_intro:"3 bedrooms across two levels, comfortably sleeping up to 7 guests.",
+cap_b:"Up to 7 guests",cap_s:"— 3 bedrooms · 2 bathrooms · 180 m² living space",
+f1_tag:"Ground floor",f1_t:"Living spaces",f1_a:"Living room with fireplace / wood stove",f1_b:"Dining room & fitted kitchen",f1_c:"Separate WC",
+f2_tag:"First floor",f2_t:"Two bedrooms",f2_a:"2 bedrooms with double beds",f2_b:"Bathroom",f2_c:"Separate WC",
+f3_tag:"Garden level",f3_t:"Suite & lounge",f3_a:"Large bedroom (double bed + extra bed)",f3_b:"Bathroom & WC",f3_c:"Lounge / TV area",
+avis_eyebrow:"They've stayed here",avis_title:"What our guests say",
+avis1:"We really enjoyed our stay at La Bécassière. A very pleasant house, with beautiful volumes and a warm atmosphere. The heated pool was particularly appreciated.",
+avis2:"Truly charming house! Well decorated, spacious and very comfortable. We felt at home from the moment we arrived. We recommend it without hesitation.",
+avis3:"Beautiful and charming house. Incredible garden and pool. The best place for a calm and inspiring weekend.",
+avis4:"Perfect stay. Beautiful house, top-notch pool.",
+avis_source:"Verified Airbnb reviews — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">see all reviews ↗</a>",
+reg_eyebrow:"The region",reg_title:"In the heart of the Pays d'Auge",
+reg_p:"Between sea and countryside, La Bécassière is the perfect base to explore the Norman coast: fishing harbours, elegant beaches, markets and half-timbered villages.",
+poi1_d:"Harbour, old basin, art galleries",poi2_d:"Beaches, boardwalks & casinos",poi3_n:"Shops & market",poi3_d:"Nearest village shops",poi4_d:"Views over the Seine & Le Havre",poi5_n:"Étretat & Alabaster Coast",poi5_d:"Spectacular cliffs",
+book_eyebrow:"Availability & booking",book_title:"Book your stay",
+book_card_t:"Online booking",book_card_p:"Check the live calendar and book in a few clicks, with secure payment via Airbnb.",
+book_airbnb:"Book on Airbnb",book_direct:"Direct enquiry (long stays)",
+se1:"High season (Jul–Aug)",se1p:"on request",se2:"Mid season (May, Jun, Sep)",se2p:"on request",se3:"Low season",se3p:"reduced rates",
+se_note:"Long and off-season stays: preferential rates on request.",
+cf_t:"A question, or a tailor-made stay?",cf_p:"Write to us directly — we reply within 24 hours.",
+cf_name:"Name",cf_email:"E-mail",cf_dates:"Preferred dates",cf_guests:"Guests",cf_msg:"Message",cf_send:"Send enquiry",
+foot_tag:"Norman family home & heated pool, 10 min from Honfleur.",
+foot_atout:"4★ Atout France rating — in progress",
+foot_nav:"Navigation",foot_contact:"Contact",foot_addr:"Genneville, Calvados (14600), France",
+foot_legal:"SARL PROVOST CGMN · Furnished tourist rental · Legal notice",
+foot_rights:"© 2026 La Bécassière. All rights reserved."
+},
+de:{
+nav_house:"Das Haus",nav_pool:"Der Pool",nav_gallery:"Galerie",nav_rooms:"Zimmer",nav_avis:"Bewertungen",nav_region:"Die Region",nav_book:"Buchen",
+ph_hero:"Titelbild — der beheizte Pool",ph_facade:"Foto — Fassade & Garten",ph_pool:"Foto — der Pool",
+hero_eyebrow:"Normannisches Haus · Pays d'Auge",
+hero_lede:"Ein Familienhaus mit privatem beheiztem Pool, 10 Minuten von Honfleur.",
+chip_size:"180 m²",chip_guests:"Bis zu 7 Gäste",chip_pool:"Beheizter Pool",chip_garden:"Großer Garten",
+hero_cta:"Verfügbarkeit prüfen",hero_cta2:"Das Haus entdecken",scroll:"Scrollen",
+house_eyebrow:"Der Geist des Hauses",house_title:"Ein echtes Familienhaus, vom Lauf der Zeit geprägt",
+house_p1:"Ein authentisches normannisches Anwesen von 180 m², über Generationen weitergegeben und eingebettet in reine Natur. Sichtbalken, patinierte Terrakottafliesen, antike Fundstücke und Familienerinnerungen: <strong>der Charme des Alten wird hier voll und ganz gelebt</strong> — das genaue Gegenteil einer standardisierten Unterkunft.",
+house_p2:"Ganz im Geist der großen normannischen Jagdhäuser erzählen einige Geweihe und Trophäen die Geschichte des Ortes. Im Morgengrauen ziehen nicht selten Rehe durch den Garten. Das Haus verdankt seinen Namen den Waldschnepfen (\"bécasses\"), die in den umliegenden Wäldern Zuflucht finden.",
+pool_eyebrow:"Das Herz schöner Tage",pool_title:"Ein beheizter Pool, ganz für Sie",
+pool_p:"Ausschließlich den Gästen vorbehalten und vollständig gesichert (Zaun, Tor, elektrische Abdeckung), lässt sich der Pool von Mai bis September in voller Privatsphäre genießen, mit Blick auf die ruhige Landschaft.",
+pool_s1:"Meter",pool_s2:"beheiztes Wasser",pool_s3n:"Mai–Sept.",pool_s3:"Badesaison",
+gal_eyebrow:"In Bildern",gal_title:"Durch die Räume und den Garten",
+g_pool:"Pool",g_living:"Wohnzimmer & Kamin",g_kitchen:"Einbauküche",g_room:"Schlafzimmer",g_garden:"Garten & Terrasse",g_bath:"Badezimmer",
+amen_eyebrow:"Ausstattung & Service",amen_title:"Alles für einen sorglosen Aufenthalt",
+a1_t:"Privater beheizter Pool",a1_d:"12 × 5 m, gesichert, zur alleinigen Nutzung, von Mai bis September geöffnet.",
+a2_t:"Großer Garten mit Bäumen",a2_d:"Private Terrasse, Liegen, Grill, Plancha und Feuerstelle.",
+a3_t:"Kamin & Holzofen",a3_d:"Ein gemütliches Wohnzimmer für kühlere Abende.",
+a4_t:"Voll ausgestattete Küche",a4_d:"Alles zum Kochen für die ganze Familie, Geschirrspüler inklusive.",
+a5_t:"WLAN & Komfort",a5_d:"Internet, Fernseher und Haushaltswäsche inklusive.",
+a6_t:"Privatparkplatz",a6_d:"Kostenloses, sicheres Parken auf dem Grundstück.",
+rooms_eyebrow:"Zimmer & Schlafplätze",rooms_title:"Platz für die ganze Familie",
+rooms_intro:"3 Schlafzimmer auf zwei Ebenen, komfortabel für bis zu 7 Gäste.",
+cap_b:"Bis zu 7 Gäste",cap_s:"— 3 Schlafzimmer · 2 Badezimmer · 180 m² Wohnfläche",
+f1_tag:"Erdgeschoss",f1_t:"Wohnbereiche",f1_a:"Wohnzimmer mit Kamin / Holzofen",f1_b:"Esszimmer & Einbauküche",f1_c:"Separates WC",
+f2_tag:"1. Obergeschoss",f2_t:"Zwei Schlafzimmer",f2_a:"2 Schlafzimmer mit Doppelbetten",f2_b:"Badezimmer",f2_c:"Separates WC",
+f3_tag:"Gartengeschoss",f3_t:"Suite & Entspannung",f3_a:"Großes Schlafzimmer (Doppelbett + Zustellbett)",f3_b:"Badezimmer & WC",f3_c:"Lounge / TV-Bereich",
+avis_eyebrow:"Sie waren schon da",avis_title:"Das sagen unsere Gäste",
+avis1:"Wir haben unseren Aufenthalt in La Bécassière sehr genossen. Ein sehr angenehmes Haus mit schönen Räumen und warmer Atmosphäre. Der beheizte Pool wurde besonders geschätzt.",
+avis2:"Wirklich charmantes Haus! Schön dekoriert, geräumig und sehr komfortabel. Wir fühlten uns von Anfang an wie zu Hause. Wir empfehlen es ohne Zögern.",
+avis3:"Schönes und charmantes Haus. Unglaublicher Garten und Pool. Der beste Ort für ein ruhiges und inspirierendes Wochenende.",
+avis4:"Perfekter Aufenthalt. Schönes Haus, Top-Pool.",
+avis_source:"Verifizierte Airbnb-Bewertungen — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">alle Bewertungen ansehen ↗</a>",
+reg_eyebrow:"Die Region",reg_title:"Im Herzen des Pays d'Auge",
+reg_p:"Zwischen Meer und Bocage ist La Bécassière der ideale Ausgangspunkt, um die normannische Küste zu erkunden: Fischerhäfen, elegante Strände, Märkte und Fachwerkdörfer.",
+poi1_d:"Hafen, altes Becken, Kunstgalerien",poi2_d:"Strände, Promenaden & Casinos",poi3_n:"Geschäfte & Markt",poi3_d:"Nächste Dorfgeschäfte",poi4_d:"Blick auf Seine & Le Havre",poi5_n:"Étretat & Alabasterküste",poi5_d:"Spektakuläre Klippen",
+book_eyebrow:"Verfügbarkeit & Buchung",book_title:"Buchen Sie Ihren Aufenthalt",
+book_card_t:"Online buchen",book_card_p:"Sehen Sie den Live-Kalender und buchen Sie in wenigen Klicks, mit sicherer Zahlung über Airbnb.",
+book_airbnb:"Auf Airbnb buchen",book_direct:"Direkte Anfrage (Langzeit)",
+se1:"Hochsaison (Jul–Aug)",se1p:"auf Anfrage",se2:"Nebensaison (Mai, Jun, Sep)",se2p:"auf Anfrage",se3:"Vorsaison",se3p:"reduzierte Preise",
+se_note:"Lang- und Nebensaison-Aufenthalte: Vorzugspreise auf Anfrage.",
+cf_t:"Eine Frage oder ein maßgeschneiderter Aufenthalt?",cf_p:"Schreiben Sie uns direkt — wir antworten innerhalb von 24 Stunden.",
+cf_name:"Name",cf_email:"E-Mail",cf_dates:"Wunschtermine",cf_guests:"Gäste",cf_msg:"Nachricht",cf_send:"Anfrage senden",
+foot_tag:"Normannisches Familienhaus & beheizter Pool, 10 Min von Honfleur.",
+foot_atout:"4★ Atout-France-Klassifizierung — in Bearbeitung",
+foot_nav:"Navigation",foot_contact:"Kontakt",foot_addr:"Genneville, Calvados (14600), Frankreich",
+foot_legal:"SARL PROVOST CGMN · Möblierte Ferienvermietung · Impressum",
+foot_rights:"© 2026 La Bécassière. Alle Rechte vorbehalten."
+},
+sv:{
+nav_house:"Huset",nav_pool:"Poolen",nav_gallery:"Galleri",nav_rooms:"Sovrum",nav_avis:"Recensioner",nav_region:"Regionen",nav_book:"Boka",
+ph_hero:"Omslagsbild — den uppvärmda poolen",ph_facade:"Foto — fasad & trädgård",ph_pool:"Foto — poolen",
+hero_eyebrow:"Normandiskt hus · Pays d'Auge",
+hero_lede:"Ett familjehus med privat uppvärmd pool, 10 minuter från Honfleur.",
+chip_size:"180 m²",chip_guests:"Upp till 7 gäster",chip_pool:"Uppvärmd pool",chip_garden:"Stor trädgård",
+hero_cta:"Se tillgänglighet",hero_cta2:"Upptäck huset",scroll:"Scrolla",
+house_eyebrow:"Husets själ",house_title:"Ett äkta familjehus, format av tiden",
+house_p1:"En autentisk normandisk egendom på 180 m², nedärvd genom generationer och inbäddad i ren natur. Synliga bjälkar, patinerat tegelgolv, loppisfynd och familjeminnen: <strong>här omfamnas det gamlas charm fullt ut</strong> — raka motsatsen till ett standardiserat boende.",
+house_p2:"Troget andan i Normandies stora jaktgårdar berättar några horn och troféer platsens historia. I gryningen är det inte ovanligt att se rådjur korsa trädgården. Huset har fått sitt namn efter morkullorna (\"bécasses\") som söker skydd i de omgivande skogarna.",
+pool_eyebrow:"Hjärtat i de fina dagarna",pool_title:"En uppvärmd pool, helt för er",
+pool_p:"Reserverad enbart för gästerna och helt säkrad (staket, grind, eldriven täckning) kan poolen njutas i full avskildhet från maj till september, med utsikt över den lugna landsbygden.",
+pool_s1:"meter",pool_s2:"uppvärmt vatten",pool_s3n:"Maj–sept.",pool_s3:"badsäsong",
+gal_eyebrow:"I bilder",gal_title:"Genom rummen och trädgården",
+g_pool:"Pool",g_living:"Vardagsrum & öppen spis",g_kitchen:"Fullt kök",g_room:"Sovrum",g_garden:"Trädgård & terrass",g_bath:"Badrum",
+amen_eyebrow:"Bekvämligheter & service",amen_title:"Allt för en bekymmersfri vistelse",
+a1_t:"Privat uppvärmd pool",a1_d:"12 × 5 m, säkrad, enskild användning, öppen maj till september.",
+a2_t:"Stor trädgård med träd",a2_d:"Privat terrass, solstolar, grill, plancha och eldstad.",
+a3_t:"Öppen spis & vedkamin",a3_d:"Ett varmt vardagsrum för svalare kvällar.",
+a4_t:"Fullt utrustat kök",a4_d:"Allt du behöver för att laga mat med familjen, diskmaskin ingår.",
+a5_t:"WiFi & komfort",a5_d:"Internet, TV och hushållslinne ingår.",
+a6_t:"Privat parkering",a6_d:"Gratis och säker parkering på fastigheten.",
+rooms_eyebrow:"Sovrum & sängplatser",rooms_title:"Plats för hela familjen",
+rooms_intro:"3 sovrum på två plan, bekväma för upp till 7 gäster.",
+cap_b:"Upp till 7 gäster",cap_s:"— 3 sovrum · 2 badrum · 180 m² boyta",
+f1_tag:"Bottenvåning",f1_t:"Vardagsutrymmen",f1_a:"Vardagsrum med öppen spis / vedkamin",f1_b:"Matsal & fullt kök",f1_c:"Separat WC",
+f2_tag:"Övervåning",f2_t:"Två sovrum",f2_a:"2 sovrum med dubbelsängar",f2_b:"Badrum",f2_c:"Separat WC",
+f3_tag:"Trädgårdsplan",f3_t:"Svit & avkoppling",f3_a:"Stort sovrum (dubbelsäng + extrasäng)",f3_b:"Badrum & WC",f3_c:"Lounge / TV-hörna",
+avis_eyebrow:"De har varit här",avis_title:"Vad våra gäster säger",
+avis1:"Vi trivdes verkligen under vår vistelse på La Bécassière. Ett mycket trevligt hus med fina utrymmen och varm atmosfär. Den uppvärmda poolen uppskattades särskilt.",
+avis2:"Verkligt charmigt hus! Fint dekorerat, rymligt och mycket bekvämt. Vi kände oss hemma direkt vid ankomst. Vi rekommenderar det utan tvekan.",
+avis3:"Vackert och charmigt hus. Otrolig trädgård och pool. Den bästa platsen för en lugn och inspirerande helg.",
+avis4:"Perfekt vistelse. Vackert hus, topppool.",
+avis_source:"Verifierade Airbnb-recensioner — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">se alla recensioner ↗</a>",
+reg_eyebrow:"Regionen",reg_title:"I hjärtat av Pays d'Auge",
+reg_p:"Mellan hav och landsbygd är La Bécassière den perfekta utgångspunkten för att utforska Normandies kust: fiskehamnar, eleganta stränder, marknader och korsvirkesbyar.",
+poi1_d:"Hamn, gamla bassängen, konstgallerier",poi2_d:"Stränder, strandpromenader & kasinon",poi3_n:"Butiker & marknad",poi3_d:"Närmaste byns butiker",poi4_d:"Utsikt över Seine & Le Havre",poi5_n:"Étretat & Alabasterkusten",poi5_d:"Spektakulära klippor",
+book_eyebrow:"Tillgänglighet & bokning",book_title:"Boka din vistelse",
+book_card_t:"Boka online",book_card_p:"Se kalendern i realtid och boka med några klick, säker betalning via Airbnb.",
+book_airbnb:"Boka på Airbnb",book_direct:"Direktförfrågan (längre vistelser)",
+se1:"Högsäsong (jul–aug)",se1p:"på begäran",se2:"Mellansäsong (maj, jun, sep)",se2p:"på begäran",se3:"Lågsäsong",se3p:"reducerade priser",
+se_note:"Längre och lågsäsongsvistelser: förmånliga priser på begäran.",
+cf_t:"En fråga eller en skräddarsydd vistelse?",cf_p:"Skriv direkt till oss — vi svarar inom 24 timmar.",
+cf_name:"Namn",cf_email:"E-post",cf_dates:"Önskade datum",cf_guests:"Gäster",cf_msg:"Meddelande",cf_send:"Skicka förfrågan",
+foot_tag:"Normandiskt familjehus & uppvärmd pool, 10 min från Honfleur.",
+foot_atout:"4★ Atout France-klassning — pågår",
+foot_nav:"Navigering",foot_contact:"Kontakt",foot_addr:"Genneville, Calvados (14600), Frankrike",
+foot_legal:"SARL PROVOST CGMN · Möblerad turistuthyrning · Juridisk information",
+foot_rights:"© 2026 La Bécassière. Alla rättigheter förbehållna."
+}
 };
 
 /* ====== Apply language ====== */
 function applyLang(lang){
-  const dict=I18N[lang]||I18N.fr;
-  document.documentElement.lang=lang;
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const k=el.getAttribute("data-i18n");
-    if(dict[k]!==undefined) el.innerHTML=dict[k];
-  });
-  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
-  try{const u=new URL(window.location);u.searchParams.set("lang",lang);history.replaceState(null,"",u);}catch(e){}
+const dict=I18N[lang]||I18N.fr;
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+const k=el.getAttribute("data-i18n");
+if(dict[k]!==undefined) el.innerHTML=dict[k];
+});
+document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+try{const u=new URL(window.location);u.searchParams.set("lang",lang);history.replaceState(null,"",u);}catch(e){}
 }
 let currentLang=(new URLSearchParams(window.location.search).get("lang"))||
-  (navigator.language||"fr").slice(0,2);
+(navigator.language||"fr").slice(0,2);
 if(!I18N[currentLang]) currentLang="fr";
 document.querySelectorAll(".lang button").forEach(b=>{
-  b.addEventListener("click",()=>{currentLang=b.dataset.lang;applyLang(currentLang);});
+b.addEventListener("click",()=>{currentLang=b.dataset.lang;applyLang(currentLang);});
 });
 applyLang(currentLang);
 
@@ -747,13 +822,13 @@ document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 
 /* ====== Contact -> mailto ====== */
 document.getElementById("cf-send").addEventListener("click",()=>{
-  const v=id=>document.getElementById(id).value.trim();
-  const L={fr:["Demande de réservation — La Bécassière","Bonjour,","Nom","E-mail","Dates","Voyageurs","Message"],
-           en:["Booking enquiry — La Bécassière","Hello,","Name","E-mail","Dates","Guests","Message"],
-           de:["Buchungsanfrage — La Bécassière","Hallo,","Name","E-Mail","Termine","Gäste","Nachricht"],
-           sv:["Bokningsförfrågan — La Bécassière","Hej,","Namn","E-post","Datum","Gäster","Meddelande"]}[currentLang];
-  const body=`${L[1]}%0D%0A%0D%0A${L[2]}: ${v("cf-name")}%0D%0A${L[3]}: ${v("cf-email")}%0D%0A${L[4]}: ${v("cf-dates")}%0D%0A${L[5]}: ${v("cf-guests")}%0D%0A%0D%0A${L[6]}:%0D%0A${v("cf-msg")}`;
-  window.location.href=`mailto:provostcgmn@gmail.com?subject=${encodeURIComponent(L[0])}&body=${body}`;
+const v=id=>document.getElementById(id).value.trim();
+const L={fr:["Demande de réservation — La Bécassière","Bonjour,","Nom","E-mail","Dates","Voyageurs","Message"],
+en:["Booking enquiry — La Bécassière","Hello,","Name","E-mail","Dates","Guests","Message"],
+de:["Buchungsanfrage — La Bécassière","Hallo,","Name","E-Mail","Termine","Gäste","Nachricht"],
+sv:["Bokningsförfrågan — La Bécassière","Hej,","Namn","E-post","Datum","Gäster","Meddelande"]}[currentLang];
+const body=`${L[1]}%0D%0A%0D%0A${L[2]}: ${v("cf-name")}%0D%0A${L[3]}: ${v("cf-email")}%0D%0A${L[4]}: ${v("cf-dates")}%0D%0A${L[5]}: ${v("cf-guests")}%0D%0A%0D%0A${L[6]}:%0D%0A${v("cf-msg")}`;
+window.location.href=`mailto:provostcgmn@gmail.com?subject=${encodeURIComponent(L[0])}&body=${body}`;
 });
 </script>
 </body>
