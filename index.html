@@ -219,6 +219,7 @@ border-radius:10px;padding:20px 26px;margin-top:30px;flex-wrap:wrap;
 .avis-card{background:var(--bone);border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:10px}
 .avis-card .stars{color:var(--brass);font-size:.9rem;letter-spacing:2px}
 .avis-card .name{font-family:var(--serif);font-size:1.05rem;color:var(--green-deep)}
+.avis-rating{margin-top:10px;font-size:1rem;color:var(--brass);font-weight:700}
 .avis-card p{font-size:.9rem;color:var(--green-soft);line-height:1.6;max-width:none}
 .avis-source{margin-top:26px;font-size:.85rem;color:var(--green-soft);text-align:center}
 .avis-source a{color:var(--brass);font-weight:600}
@@ -458,8 +459,14 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="reveal" style="text-align:center">
 <span class="eyebrow" data-i18n="avis_eyebrow"></span>
 <h2 class="section-title" data-i18n="avis_title"></h2>
+<p class="avis-rating" data-i18n="avis_rating"></p>
 </div>
 <div class="avis-grid reveal">
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Toria</div>
+<p data-i18n="avis0"></p>
+</div>
 <div class="avis-card">
 <div class="stars">★★★★★</div>
 <div class="name">Anne-Cécile</div>
@@ -479,6 +486,16 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="stars">★★★★★</div>
 <div class="name">Isabelle</div>
 <p data-i18n="avis4"></p>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★★</div>
+<div class="name">Lasse</div>
+<p data-i18n="avis5"></p>
+</div>
+<div class="avis-card">
+<div class="stars">★★★★☆</div>
+<div class="name">Henrik</div>
+<p data-i18n="avis6"></p>
 </div>
 </div>
 <p class="avis-source" data-i18n="avis_source"></p>
@@ -507,6 +524,23 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <iframe loading="lazy" title="Genneville, Calvados"
 src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C49.45&layer=mapnik&marker=49.405%2C0.255"></iframe>
 </div>
+</div>
+</div>
+</section>
+
+<!-- ============ SERVICES ADDITIONNELS ============ -->
+<section class="amenities" id="services">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow" data-i18n="serv_eyebrow"></span>
+<h2 class="section-title" data-i18n="serv_title"></h2>
+<p style="color:var(--green-soft)" data-i18n="serv_intro"></p>
+</div>
+<div class="amen-grid reveal">
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 011-1h9l6 5v10a1 1 0 01-1 1H5a1 1 0 01-1-1zM3 8l8 4 8-4"/></svg></div><div><h3 data-i18n="s1_t"></h3><p data-i18n="s1_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13a14 14 0 0114 0M8.5 16.5a8 8 0 017 0M12 20h.01"/></svg></div><div><h3 data-i18n="s2_t"></h3><p data-i18n="s2_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 11h16l-2 8H6zM7 11V8a5 5 0 0110 0v3M12 4V2"/></svg></div><div><h3 data-i18n="s3_t"></h3><p data-i18n="s3_d"></p></div></div>
+<div class="amen"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><h3 data-i18n="s4_t"></h3><p data-i18n="s4_d"></p></div></div>
 </div>
 </div>
 </section>
@@ -598,7 +632,7 @@ chip_size:"180 m²",chip_guests:"Jusqu'à 7 voyageurs",chip_pool:"Piscine chauff
 hero_cta:"Vérifier les disponibilités",hero_cta2:"Découvrir la maison",scroll:"Défiler",
 house_eyebrow:"L'esprit de la maison",house_title:"Une vraie maison de famille, habitée par le temps",
 house_p1:"Authentique propriété normande de 180 m² transmise de génération en génération, nichée dans un écrin de nature. Poutres apparentes, tomettes patinées, meubles chinés et souvenirs de famille : <strong>le charme de l'ancien y est pleinement assumé</strong> — tout le contraire d'un logement standardisé.",
-house_p2:"Fidèle à l'esprit des grandes maisons de chasse normandes, quelques bois de cerf et trophées racontent l'histoire du lieu. Au petit matin, il n'est pas rare d'y croiser biches et chevreuils traversant le jardin. La maison tient son nom des bécasses qui trouvent refuge dans les bois familiaux.",
+house_p2:"La maison a été construite par les grands-parents, avant d'être transmise à leurs enfants — la génération qui l'ouvre aujourd'hui à d'autres familles pour le temps d'un séjour. Dans le salon, les bois de cerf et les trophées ne sont pas un décor rapporté : ils ont été chassés sur place par un membre de la famille, et racontent l'histoire du lieu autant que ses habitants. Au petit matin, il n'est pas rare d'y croiser biches et chevreuils traversant le jardin. La maison tient son nom des bécasses qui trouvent refuge dans les bois familiaux.",
 pool_eyebrow:"Le cœur des belles journées",pool_title:"Une piscine chauffée, rien que pour vous",
 pool_p:"Réservée à l'usage exclusif des voyageurs et entièrement sécurisée (clôture, portillon, rideau électrique), la piscine se profite en toute intimité de mai à septembre, face au calme de la campagne.",
 pool_s1:"mètres",pool_s2:"eau chauffée",pool_s3n:"Mai–Sept.",pool_s3:"saison de baignade",
@@ -617,11 +651,21 @@ cap_b:"Jusqu'à 7 voyageurs",cap_s:"— 3 chambres · 2 salles de bain · 180 m�
 f1_tag:"Rez-de-chaussée",f1_t:"Espaces de vie",f1_a:"Salon avec cheminée / poêle à bois",f1_b:"Salle à manger & cuisine équipée",f1_c:"WC indépendant",
 f2_tag:"1ᵉʳ étage",f2_t:"Deux chambres",f2_a:"2 chambres avec lits doubles",f2_b:"Salle de bain",f2_c:"WC séparé",
 f3_tag:"Rez-de-jardin",f3_t:"Suite & détente",f3_a:"Grande chambre (lit double + couchage d'appoint)",f3_b:"Salle de bain & WC",f3_c:"Coin détente / TV",
+serv_eyebrow:"Sur demande",serv_title:"Des attentions en plus, si vous le souhaitez",
+serv_intro:"Quatre services exclusifs, disponibles sur simple demande pour prolonger la détente du séjour.",
+s1_t:"Petits-déjeuners",s1_d:"Préparés et livrés sur place, sur demande.",
+s2_t:"Plateaux de fruits de mer",s2_d:"Une sélection locale, à déguster en terrasse ou au bord de la piscine.",
+s3_t:"Planches apéritives",s3_d:"De quoi accompagner l'apéritif entre voyageurs.",
+s4_t:"Massages & soins bien-être",s4_d:"Massages à domicile pour prolonger la détente du séjour.",
 avis_eyebrow:"Ils y sont allés",avis_title:"Ce qu'en disent nos voyageurs",
+avis_rating:"★ 4,86 / 5 — 7 avis vérifiés",
+avis0:"Nous avons passé des vacances absolument merveilleuses. La maison était magnifique, pleine de charme rustique et vraiment bien équipée pour des vacances relaxantes en famille. On se sentait comme à la maison. L'équipe a été très réactive pour toutes les questions. Nous reviendrons certainement.",
 avis1:"Nous avons beaucoup aimé notre séjour à La Bécassière. Une maison très agréable, avec de beaux volumes et une atmosphère chaleureuse. La piscine chauffée a été particulièrement appréciée.",
 avis2:"Maison vraiment charmante ! Bien décorée, spacieuse et très confortable. Nous nous y sommes sentis comme chez nous dès notre arrivée. Nous recommandons sans hésiter.",
 avis3:"Belle et charmante maison. Jardin et piscine incroyables. Le meilleur hébergement pour passer un week-end calme et inspirant.",
 avis4:"Séjour parfait. Très belle maison, piscine au top.",
+avis5:"Une expérience vraiment charmante.",
+avis6:"Propriété vraiment unique. Belle piscine. Il faut se préparer à un voyage dans le temps, avec tout ce que cela implique. Nous avons beaucoup apprécié notre journée là-bas.",
 avis_source:"Avis vérifiés Airbnb — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">voir tous les avis ↗</a>",
 reg_eyebrow:"La région",reg_title:"Au cœur du Pays d'Auge",
 reg_p:"Entre mer et bocage, La Bécassière est le point de départ idéal pour explorer la côte normande : ports de pêche, plages élégantes, marchés et villages à colombages.",
@@ -630,7 +674,7 @@ book_eyebrow:"Disponibilités & réservation",book_title:"Réservez votre séjou
 book_card_t:"Réservation en ligne",book_card_p:"Consultez le calendrier en temps réel et réservez en quelques clics, paiement sécurisé via Airbnb.",
 book_airbnb:"Réserver sur Airbnb",book_direct:"Demande directe (séjours longs)",
 se1:"Haute saison (juil.–août)",se1p:"sur demande",se2:"Moyenne saison (mai, juin, sept.)",se2p:"sur demande",se3:"Basse saison",se3p:"tarif dégressif",
-se_note:"Séjours longs et hors-saison : tarifs préférentiels sur demande.",
+se_note:"Remise automatique de -10 % dès 7 nuits, -15 % dès 14 nuits, déjà appliquée au montant total du séjour.",
 cf_t:"Une question, un séjour sur mesure ?",cf_p:"Écrivez-nous directement, nous répondons sous 24 h.",
 cf_name:"Nom",cf_email:"E-mail",cf_dates:"Dates souhaitées",cf_guests:"Voyageurs",cf_msg:"Message",cf_send:"Envoyer la demande",
 foot_tag:"Maison de famille normande & piscine chauffée, à 10 min de Honfleur.",
@@ -648,7 +692,7 @@ chip_size:"180 m²",chip_guests:"Up to 7 guests",chip_pool:"Heated pool",chip_ga
 hero_cta:"Check availability",hero_cta2:"Discover the house",scroll:"Scroll",
 house_eyebrow:"The spirit of the house",house_title:"A true family home, shaped by time",
 house_p1:"An authentic 180 m² Norman property passed down through generations, nestled in a setting of pure nature. Exposed beams, time-worn terracotta tiles, antique-market finds and family keepsakes: <strong>the charm of the past is fully embraced here</strong> — the very opposite of a standardised rental.",
-house_p2:"True to the spirit of the great Norman hunting lodges, a few antlers and trophies tell the story of the place. At dawn, you may well spot deer crossing the garden. The house takes its name from the woodcocks (\"bécasses\") that shelter in the family woods.",
+house_p2:"The house was built by the grandparents, before being passed on to their children — the generation now opening it to other families for the length of a stay. In the living room, the antlers and trophies aren't borrowed decor: they were hunted on the property itself by a family member, and tell the story of the place as much as its inhabitants. At dawn, you may well spot deer crossing the garden. The house takes its name from the woodcocks (\"bécasses\") that shelter in the family woods.",
 pool_eyebrow:"The heart of fine days",pool_title:"A heated pool, all to yourselves",
 pool_p:"For the exclusive use of guests and fully secured (fence, gate, electric cover), the pool can be enjoyed in complete privacy from May to September, overlooking the quiet countryside.",
 pool_s1:"metres",pool_s2:"heated water",pool_s3n:"May–Sept.",pool_s3:"swimming season",
@@ -667,11 +711,21 @@ cap_b:"Up to 7 guests",cap_s:"— 3 bedrooms · 2 bathrooms · 180 m² living sp
 f1_tag:"Ground floor",f1_t:"Living spaces",f1_a:"Living room with fireplace / wood stove",f1_b:"Dining room & fitted kitchen",f1_c:"Separate WC",
 f2_tag:"First floor",f2_t:"Two bedrooms",f2_a:"2 bedrooms with double beds",f2_b:"Bathroom",f2_c:"Separate WC",
 f3_tag:"Garden level",f3_t:"Suite & lounge",f3_a:"Large bedroom (double bed + extra bed)",f3_b:"Bathroom & WC",f3_c:"Lounge / TV area",
+serv_eyebrow:"On request",serv_title:"A few extra touches, if you'd like",
+serv_intro:"Four exclusive services, available on simple request to extend the relaxation of your stay.",
+s1_t:"Breakfasts",s1_d:"Prepared and delivered on site, on request.",
+s2_t:"Seafood platters",s2_d:"A local selection, to enjoy on the terrace or by the pool.",
+s3_t:"Aperitif platters",s3_d:"Something to go with drinks between travellers.",
+s4_t:"Massages & wellness treatments",s4_d:"At-home massages to extend the relaxation of your stay.",
 avis_eyebrow:"They've stayed here",avis_title:"What our guests say",
+avis_rating:"★ 4.86 / 5 — 7 verified reviews",
+avis0:"We had an absolutely wonderful vacation. The house was beautiful, full of rustic charm and really well equipped for a relaxing family holiday. It felt like home. The team was very responsive to every question. We will definitely be back.",
 avis1:"We really enjoyed our stay at La Bécassière. A very pleasant house, with beautiful volumes and a warm atmosphere. The heated pool was particularly appreciated.",
 avis2:"Truly charming house! Well decorated, spacious and very comfortable. We felt at home from the moment we arrived. We recommend it without hesitation.",
 avis3:"Beautiful and charming house. Incredible garden and pool. The best place for a calm and inspiring weekend.",
 avis4:"Perfect stay. Beautiful house, top-notch pool.",
+avis5:"A truly charming experience.",
+avis6:"Truly unique property. Beautiful pool. Be prepared for a journey back in time, with everything that entails. We really enjoyed our day there.",
 avis_source:"Verified Airbnb reviews — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">see all reviews ↗</a>",
 reg_eyebrow:"The region",reg_title:"In the heart of the Pays d'Auge",
 reg_p:"Between sea and countryside, La Bécassière is the perfect base to explore the Norman coast: fishing harbours, elegant beaches, markets and half-timbered villages.",
@@ -680,7 +734,7 @@ book_eyebrow:"Availability & booking",book_title:"Book your stay",
 book_card_t:"Online booking",book_card_p:"Check the live calendar and book in a few clicks, with secure payment via Airbnb.",
 book_airbnb:"Book on Airbnb",book_direct:"Direct enquiry (long stays)",
 se1:"High season (Jul–Aug)",se1p:"on request",se2:"Mid season (May, Jun, Sep)",se2p:"on request",se3:"Low season",se3p:"reduced rates",
-se_note:"Long and off-season stays: preferential rates on request.",
+se_note:"Automatic discount: -10% from 7 nights, -15% from 14 nights, already applied to the total stay amount.",
 cf_t:"A question, or a tailor-made stay?",cf_p:"Write to us directly — we reply within 24 hours.",
 cf_name:"Name",cf_email:"E-mail",cf_dates:"Preferred dates",cf_guests:"Guests",cf_msg:"Message",cf_send:"Send enquiry",
 foot_tag:"Norman family home & heated pool, 10 min from Honfleur.",
@@ -698,7 +752,7 @@ chip_size:"180 m²",chip_guests:"Bis zu 7 Gäste",chip_pool:"Beheizter Pool",chi
 hero_cta:"Verfügbarkeit prüfen",hero_cta2:"Das Haus entdecken",scroll:"Scrollen",
 house_eyebrow:"Der Geist des Hauses",house_title:"Ein echtes Familienhaus, vom Lauf der Zeit geprägt",
 house_p1:"Ein authentisches normannisches Anwesen von 180 m², über Generationen weitergegeben und eingebettet in reine Natur. Sichtbalken, patinierte Terrakottafliesen, antike Fundstücke und Familienerinnerungen: <strong>der Charme des Alten wird hier voll und ganz gelebt</strong> — das genaue Gegenteil einer standardisierten Unterkunft.",
-house_p2:"Ganz im Geist der großen normannischen Jagdhäuser erzählen einige Geweihe und Trophäen die Geschichte des Ortes. Im Morgengrauen ziehen nicht selten Rehe durch den Garten. Das Haus verdankt seinen Namen den Waldschnepfen (\"bécasses\"), die in den umliegenden Wäldern Zuflucht finden.",
+house_p2:"Das Haus wurde von den Großeltern erbaut und später an ihre Kinder weitergegeben — die Generation, die es heute für die Dauer eines Aufenthalts anderen Familien öffnet. Im Wohnzimmer sind die Geweihe und Trophäen kein zugekaufter Schmuck: Sie wurden von einem Familienmitglied direkt auf dem Grundstück erlegt und erzählen die Geschichte des Ortes ebenso wie seiner Bewohner. Im Morgengrauen ziehen nicht selten Rehe durch den Garten. Das Haus verdankt seinen Namen den Waldschnepfen (\"bécasses\"), die in den umliegenden Wäldern Zuflucht finden.",
 pool_eyebrow:"Das Herz schöner Tage",pool_title:"Ein beheizter Pool, ganz für Sie",
 pool_p:"Ausschließlich den Gästen vorbehalten und vollständig gesichert (Zaun, Tor, elektrische Abdeckung), lässt sich der Pool von Mai bis September in voller Privatsphäre genießen, mit Blick auf die ruhige Landschaft.",
 pool_s1:"Meter",pool_s2:"beheiztes Wasser",pool_s3n:"Mai–Sept.",pool_s3:"Badesaison",
@@ -717,11 +771,21 @@ cap_b:"Bis zu 7 Gäste",cap_s:"— 3 Schlafzimmer · 2 Badezimmer · 180 m² Woh
 f1_tag:"Erdgeschoss",f1_t:"Wohnbereiche",f1_a:"Wohnzimmer mit Kamin / Holzofen",f1_b:"Esszimmer & Einbauküche",f1_c:"Separates WC",
 f2_tag:"1. Obergeschoss",f2_t:"Zwei Schlafzimmer",f2_a:"2 Schlafzimmer mit Doppelbetten",f2_b:"Badezimmer",f2_c:"Separates WC",
 f3_tag:"Gartengeschoss",f3_t:"Suite & Entspannung",f3_a:"Großes Schlafzimmer (Doppelbett + Zustellbett)",f3_b:"Badezimmer & WC",f3_c:"Lounge / TV-Bereich",
+serv_eyebrow:"Auf Anfrage",serv_title:"Kleine Extras, wenn Sie möchten",
+serv_intro:"Vier exklusive Services, auf einfache Anfrage erhältlich, um die Entspannung Ihres Aufenthalts zu verlängern.",
+s1_t:"Frühstück",s1_d:"Vor Ort zubereitet und geliefert, auf Anfrage.",
+s2_t:"Meeresfrüchteplatten",s2_d:"Eine lokale Auswahl, auf der Terrasse oder am Pool zu genießen.",
+s3_t:"Aperitif-Platten",s3_d:"Der passende Snack zum Aperitif unter Reisenden.",
+s4_t:"Massagen & Wellnessbehandlungen",s4_d:"Massagen vor Ort, um die Entspannung Ihres Aufenthalts zu verlängern.",
 avis_eyebrow:"Sie waren schon da",avis_title:"Das sagen unsere Gäste",
+avis_rating:"★ 4,86 / 5 — 7 verifizierte Bewertungen",
+avis0:"Wir hatten einen absolut wunderbaren Urlaub. Das Haus war wunderschön, voller rustikalem Charme und wirklich gut ausgestattet für einen entspannten Familienurlaub. Wir fühlten uns wie zu Hause. Das Team war bei allen Fragen sehr reaktionsschnell. Wir kommen sicher wieder.",
 avis1:"Wir haben unseren Aufenthalt in La Bécassière sehr genossen. Ein sehr angenehmes Haus mit schönen Räumen und warmer Atmosphäre. Der beheizte Pool wurde besonders geschätzt.",
 avis2:"Wirklich charmantes Haus! Schön dekoriert, geräumig und sehr komfortabel. Wir fühlten uns von Anfang an wie zu Hause. Wir empfehlen es ohne Zögern.",
 avis3:"Schönes und charmantes Haus. Unglaublicher Garten und Pool. Der beste Ort für ein ruhiges und inspirierendes Wochenende.",
 avis4:"Perfekter Aufenthalt. Schönes Haus, Top-Pool.",
+avis5:"Eine wirklich charmante Erfahrung.",
+avis6:"Wirklich einzigartiges Anwesen. Schöner Pool. Man muss sich auf eine Zeitreise einstellen, mit allem, was das bedeutet. Wir haben unseren Tag dort sehr genossen.",
 avis_source:"Verifizierte Airbnb-Bewertungen — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">alle Bewertungen ansehen ↗</a>",
 reg_eyebrow:"Die Region",reg_title:"Im Herzen des Pays d'Auge",
 reg_p:"Zwischen Meer und Bocage ist La Bécassière der ideale Ausgangspunkt, um die normannische Küste zu erkunden: Fischerhäfen, elegante Strände, Märkte und Fachwerkdörfer.",
@@ -730,7 +794,7 @@ book_eyebrow:"Verfügbarkeit & Buchung",book_title:"Buchen Sie Ihren Aufenthalt"
 book_card_t:"Online buchen",book_card_p:"Sehen Sie den Live-Kalender und buchen Sie in wenigen Klicks, mit sicherer Zahlung über Airbnb.",
 book_airbnb:"Auf Airbnb buchen",book_direct:"Direkte Anfrage (Langzeit)",
 se1:"Hochsaison (Jul–Aug)",se1p:"auf Anfrage",se2:"Nebensaison (Mai, Jun, Sep)",se2p:"auf Anfrage",se3:"Vorsaison",se3p:"reduzierte Preise",
-se_note:"Lang- und Nebensaison-Aufenthalte: Vorzugspreise auf Anfrage.",
+se_note:"Automatischer Nachlass: -10 % ab 7 Nächten, -15 % ab 14 Nächten, bereits auf den Gesamtbetrag des Aufenthalts angewendet.",
 cf_t:"Eine Frage oder ein maßgeschneiderter Aufenthalt?",cf_p:"Schreiben Sie uns direkt — wir antworten innerhalb von 24 Stunden.",
 cf_name:"Name",cf_email:"E-Mail",cf_dates:"Wunschtermine",cf_guests:"Gäste",cf_msg:"Nachricht",cf_send:"Anfrage senden",
 foot_tag:"Normannisches Familienhaus & beheizter Pool, 10 Min von Honfleur.",
@@ -748,7 +812,7 @@ chip_size:"180 m²",chip_guests:"Upp till 7 gäster",chip_pool:"Uppvärmd pool",
 hero_cta:"Se tillgänglighet",hero_cta2:"Upptäck huset",scroll:"Scrolla",
 house_eyebrow:"Husets själ",house_title:"Ett äkta familjehus, format av tiden",
 house_p1:"En autentisk normandisk egendom på 180 m², nedärvd genom generationer och inbäddad i ren natur. Synliga bjälkar, patinerat tegelgolv, loppisfynd och familjeminnen: <strong>här omfamnas det gamlas charm fullt ut</strong> — raka motsatsen till ett standardiserat boende.",
-house_p2:"Troget andan i Normandies stora jaktgårdar berättar några horn och troféer platsens historia. I gryningen är det inte ovanligt att se rådjur korsa trädgården. Huset har fått sitt namn efter morkullorna (\"bécasses\") som söker skydd i de omgivande skogarna.",
+house_p2:"Huset byggdes av mor- och farföräldrarna innan det gick i arv till deras barn — den generation som idag öppnar det för andra familjer under en vistelse. I vardagsrummet är hornen och troféerna ingen tillköpt dekoration: de sköts på egendomen av en familjemedlem och berättar platsens historia lika mycket som dess invånares. I gryningen är det inte ovanligt att se rådjur korsa trädgården. Huset har fått sitt namn efter morkullorna (\"bécasses\") som söker skydd i de omgivande skogarna.",
 pool_eyebrow:"Hjärtat i de fina dagarna",pool_title:"En uppvärmd pool, helt för er",
 pool_p:"Reserverad enbart för gästerna och helt säkrad (staket, grind, eldriven täckning) kan poolen njutas i full avskildhet från maj till september, med utsikt över den lugna landsbygden.",
 pool_s1:"meter",pool_s2:"uppvärmt vatten",pool_s3n:"Maj–sept.",pool_s3:"badsäsong",
@@ -767,11 +831,21 @@ cap_b:"Upp till 7 gäster",cap_s:"— 3 sovrum · 2 badrum · 180 m² boyta",
 f1_tag:"Bottenvåning",f1_t:"Vardagsutrymmen",f1_a:"Vardagsrum med öppen spis / vedkamin",f1_b:"Matsal & fullt kök",f1_c:"Separat WC",
 f2_tag:"Övervåning",f2_t:"Två sovrum",f2_a:"2 sovrum med dubbelsängar",f2_b:"Badrum",f2_c:"Separat WC",
 f3_tag:"Trädgårdsplan",f3_t:"Svit & avkoppling",f3_a:"Stort sovrum (dubbelsäng + extrasäng)",f3_b:"Badrum & WC",f3_c:"Lounge / TV-hörna",
+serv_eyebrow:"På begäran",serv_title:"Lite extra omtanke, om ni vill",
+serv_intro:"Fyra exklusiva tjänster, tillgängliga på enkel begäran för att förlänga avkopplingen under vistelsen.",
+s1_t:"Frukost",s1_d:"Förberedd och levererad på plats, på begäran.",
+s2_t:"Skaldjursfat",s2_d:"Ett lokalt urval, att njuta av på terrassen eller vid poolen.",
+s3_t:"Aptitretarbrickor",s3_d:"Något att ha till drinken mellan resenärer.",
+s4_t:"Massage & välbefinnande",s4_d:"Massage hemma för att förlänga avkopplingen under vistelsen.",
 avis_eyebrow:"De har varit här",avis_title:"Vad våra gäster säger",
+avis_rating:"★ 4,86 / 5 — 7 verifierade recensioner",
+avis0:"Vi hade en helt underbar semester. Huset var vackert, fullt av rustik charm och mycket bra utrustat för en avkopplande familjesemester. Det kändes som hemma. Teamet var mycket lyhört för alla frågor. Vi kommer definitivt tillbaka.",
 avis1:"Vi trivdes verkligen under vår vistelse på La Bécassière. Ett mycket trevligt hus med fina utrymmen och varm atmosfär. Den uppvärmda poolen uppskattades särskilt.",
 avis2:"Verkligt charmigt hus! Fint dekorerat, rymligt och mycket bekvämt. Vi kände oss hemma direkt vid ankomst. Vi rekommenderar det utan tvekan.",
 avis3:"Vackert och charmigt hus. Otrolig trädgård och pool. Den bästa platsen för en lugn och inspirerande helg.",
 avis4:"Perfekt vistelse. Vackert hus, topppool.",
+avis5:"En verkligt charmig upplevelse.",
+avis6:"Verkligt unik egendom. Vacker pool. Man måste vara beredd på en resa tillbaka i tiden, med allt vad det innebär. Vi uppskattade verkligen vår dag där.",
 avis_source:"Verifierade Airbnb-recensioner — <a href=\"https://www.airbnb.fr/rooms/1688274496753120466\" target=\"_blank\" rel=\"noopener\">se alla recensioner ↗</a>",
 reg_eyebrow:"Regionen",reg_title:"I hjärtat av Pays d'Auge",
 reg_p:"Mellan hav och landsbygd är La Bécassière den perfekta utgångspunkten för att utforska Normandies kust: fiskehamnar, eleganta stränder, marknader och korsvirkesbyar.",
@@ -780,7 +854,7 @@ book_eyebrow:"Tillgänglighet & bokning",book_title:"Boka din vistelse",
 book_card_t:"Boka online",book_card_p:"Se kalendern i realtid och boka med några klick, säker betalning via Airbnb.",
 book_airbnb:"Boka på Airbnb",book_direct:"Direktförfrågan (längre vistelser)",
 se1:"Högsäsong (jul–aug)",se1p:"på begäran",se2:"Mellansäsong (maj, jun, sep)",se2p:"på begäran",se3:"Lågsäsong",se3p:"reducerade priser",
-se_note:"Längre och lågsäsongsvistelser: förmånliga priser på begäran.",
+se_note:"Automatisk rabatt: -10 % från 7 nätter, -15 % från 14 nätter, redan tillämpad på det totala beloppet för vistelsen.",
 cf_t:"En fråga eller en skräddarsydd vistelse?",cf_p:"Skriv direkt till oss — vi svarar inom 24 timmar.",
 cf_name:"Namn",cf_email:"E-post",cf_dates:"Önskade datum",cf_guests:"Gäster",cf_msg:"Meddelande",cf_send:"Skicka förfrågan",
 foot_tag:"Normandiskt familjehus & uppvärmd pool, 10 min från Honfleur.",
