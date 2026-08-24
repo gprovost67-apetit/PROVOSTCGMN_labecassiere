@@ -191,6 +191,12 @@ border-radius:10px;padding:20px 26px;margin-top:30px;flex-wrap:wrap;
 .cap-banner b{font-family:var(--serif);font-weight:500;font-size:1.05rem}
 .cap-banner span{font-size:.92rem;color:rgba(243,239,230,.82)}
 .floors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.room-showcase{margin-top:36px}
+.room-showcase h3{font-family:var(--serif);font-size:1.3rem;color:var(--green-deep);margin-bottom:14px}
+.room-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.room-photos img{width:100%;height:280px;object-fit:cover;border-radius:8px;box-shadow:var(--shadow)}
+.room-block{margin-bottom:38px}
+.room-block:last-child{margin-bottom:0}
 .floor{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px}
 .floor .tag{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
 .floor h3{font-size:1.2rem;margin:.4rem 0 .8rem;color:var(--green-deep)}
@@ -400,12 +406,12 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="g tall"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></div>
 <div class="g"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></div>
 <div class="g"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></div>
-<div class="g"><img src="images/chambre-principale.jpg" alt="Chambre principale" loading="lazy"></div>
+<div class="g"><img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage" loading="lazy"></div>
 <div class="g wide"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></div>
 <div class="g"><img src="images/jardin-piscine.jpg" alt="Jardin terrasse et piscine" loading="lazy"></div>
-<div class="g"><img src="images/chambre-toile-rouge.jpg" alt="Chambre toile de Jouy" loading="lazy"></div>
+<div class="g"><img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage" loading="lazy"></div>
 <div class="g wide"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></div>
-<div class="g"><img src="images/chambre-enfants.jpg" alt="Chambre enfants" loading="lazy"></div>
+<div class="g"><img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin" loading="lazy"></div>
 <div class="g"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></div>
 <div class="g"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></div>
 <div class="g"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></div>
@@ -413,6 +419,10 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="g"><img src="images/etage.jpg" alt="Mezzanine et etage, mobilier ancien" loading="lazy"></div>
 <div class="g"><img src="images/porte-ancienne.jpg" alt="Porte ancienne en bois, detail architectural" loading="lazy"></div>
 <div class="g wide"><img src="images/salon-escalier.jpg" alt="Salon principal avec escalier en bois" loading="lazy"></div>
+<div class="g"><img src="images/salle-a-manger-2.jpg" alt="Salle a manger, vue depuis l'entree" loading="lazy"></div>
+<div class="g"><img src="images/salle-a-manger-3.jpg" alt="Salle a manger dressee" loading="lazy"></div>
+<div class="g wide"><img src="images/salon-cheminee-2.jpg" alt="Salon avec cheminee, autre angle" loading="lazy"></div>
+<div class="g"><img src="images/entree-escalier-2.jpg" alt="Entree et escalier en bois, autre angle" loading="lazy"></div>
 </div>
 </div>
 </section>
@@ -456,6 +466,29 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <li data-i18n="f2_a"></li><li data-i18n="f2_b"></li><li data-i18n="f2_c"></li></ul></div>
 <div class="floor"><span class="tag" data-i18n="f3_tag"></span><h3 data-i18n="f3_t"></h3><ul>
 <li data-i18n="f3_a"></li><li data-i18n="f3_b"></li><li data-i18n="f3_c"></li></ul></div>
+</div>
+<div class="room-showcase reveal">
+<div class="room-block">
+<h3 data-i18n="rb_blue"></h3>
+<div class="room-photos">
+<img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage, toile de Jouy">
+<img src="images/chambre-bleue-2.jpg" alt="Chambre bleue a l'etage, vue mezzanine">
+</div>
+</div>
+<div class="room-block">
+<h3 data-i18n="rb_green"></h3>
+<div class="room-photos">
+<img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage, papier peint rose et vert">
+<img src="images/chambre-verte-2.jpg" alt="Chambre verte a l'etage, fauteuils bordeaux">
+</div>
+</div>
+<div class="room-block">
+<h3 data-i18n="rb_pink"></h3>
+<div class="room-photos">
+<img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin, vue sur le jardin">
+<img src="images/suite-rose-detente.jpg" alt="Suite Rose, espace detente attenant">
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -651,6 +684,7 @@ cap_b:"Jusqu'à 7 voyageurs",cap_s:"— 3 chambres · 2 salles de bain · 180 m�
 f1_tag:"Rez-de-chaussée",f1_t:"Espaces de vie",f1_a:"Salon avec cheminée / poêle à bois",f1_b:"Salle à manger & cuisine équipée",f1_c:"WC indépendant",
 f2_tag:"1ᵉʳ étage",f2_t:"Deux chambres",f2_a:"2 chambres avec lits doubles",f2_b:"Salle de bain",f2_c:"WC séparé",
 f3_tag:"Rez-de-jardin",f3_t:"Suite & détente",f3_a:"Grande chambre (lit double + couchage d'appoint)",f3_b:"Salle de bain & WC",f3_c:"Coin détente / TV",
+rb_blue:"La chambre bleue — à l'étage",rb_green:"La chambre verte — à l'étage",rb_pink:"La Suite Rose — au rez-de-jardin, avec son espace détente",
 avis_eyebrow:"Ils y sont allés",avis_title:"Ce qu'en disent nos voyageurs",
 avis_rating:"★ 4,86 / 5 — 7 avis vérifiés",
 avis0:"Nous avons passé des vacances absolument merveilleuses. La maison était magnifique, pleine de charme rustique et vraiment bien équipée pour des vacances relaxantes en famille. On se sentait comme à la maison. L'équipe a été très réactive pour toutes les questions. Nous reviendrons certainement.",
@@ -707,6 +741,7 @@ cap_b:"Up to 7 guests",cap_s:"— 3 bedrooms · 2 bathrooms · 180 m² living sp
 f1_tag:"Ground floor",f1_t:"Living spaces",f1_a:"Living room with fireplace / wood stove",f1_b:"Dining room & fitted kitchen",f1_c:"Separate WC",
 f2_tag:"First floor",f2_t:"Two bedrooms",f2_a:"2 bedrooms with double beds",f2_b:"Bathroom",f2_c:"Separate WC",
 f3_tag:"Garden level",f3_t:"Suite & lounge",f3_a:"Large bedroom (double bed + extra bed)",f3_b:"Bathroom & WC",f3_c:"Lounge / TV area",
+rb_blue:"The blue room — upstairs",rb_green:"The green room — upstairs",rb_pink:"The Rose Suite — garden level, with its own lounge area",
 avis_eyebrow:"They've stayed here",avis_title:"What our guests say",
 avis_rating:"★ 4.86 / 5 — 7 verified reviews",
 avis0:"We had an absolutely wonderful vacation. The house was beautiful, full of rustic charm and really well equipped for a relaxing family holiday. It felt like home. The team was very responsive to every question. We will definitely be back.",
@@ -763,6 +798,7 @@ cap_b:"Bis zu 7 Gäste",cap_s:"— 3 Schlafzimmer · 2 Badezimmer · 180 m² Woh
 f1_tag:"Erdgeschoss",f1_t:"Wohnbereiche",f1_a:"Wohnzimmer mit Kamin / Holzofen",f1_b:"Esszimmer & Einbauküche",f1_c:"Separates WC",
 f2_tag:"1. Obergeschoss",f2_t:"Zwei Schlafzimmer",f2_a:"2 Schlafzimmer mit Doppelbetten",f2_b:"Badezimmer",f2_c:"Separates WC",
 f3_tag:"Gartengeschoss",f3_t:"Suite & Entspannung",f3_a:"Großes Schlafzimmer (Doppelbett + Zustellbett)",f3_b:"Badezimmer & WC",f3_c:"Lounge / TV-Bereich",
+rb_blue:"Das blaue Zimmer — im Obergeschoss",rb_green:"Das grüne Zimmer — im Obergeschoss",rb_pink:"Die Rosa Suite — im Gartengeschoss, mit eigenem Loungebereich",
 avis_eyebrow:"Sie waren schon da",avis_title:"Das sagen unsere Gäste",
 avis_rating:"★ 4,86 / 5 — 7 verifizierte Bewertungen",
 avis0:"Wir hatten einen absolut wunderbaren Urlaub. Das Haus war wunderschön, voller rustikalem Charme und wirklich gut ausgestattet für einen entspannten Familienurlaub. Wir fühlten uns wie zu Hause. Das Team war bei allen Fragen sehr reaktionsschnell. Wir kommen sicher wieder.",
@@ -819,6 +855,7 @@ cap_b:"Upp till 7 gäster",cap_s:"— 3 sovrum · 2 badrum · 180 m² boyta",
 f1_tag:"Bottenvåning",f1_t:"Vardagsutrymmen",f1_a:"Vardagsrum med öppen spis / vedkamin",f1_b:"Matsal & fullt kök",f1_c:"Separat WC",
 f2_tag:"Övervåning",f2_t:"Två sovrum",f2_a:"2 sovrum med dubbelsängar",f2_b:"Badrum",f2_c:"Separat WC",
 f3_tag:"Trädgårdsplan",f3_t:"Svit & avkoppling",f3_a:"Stort sovrum (dubbelsäng + extrasäng)",f3_b:"Badrum & WC",f3_c:"Lounge / TV-hörna",
+rb_blue:"Det blå rummet — på övervåningen",rb_green:"Det gröna rummet — på övervåningen",rb_pink:"Rosa sviten — på trädgårdsplan, med egen loungeyta",
 avis_eyebrow:"De har varit här",avis_title:"Vad våra gäster säger",
 avis_rating:"★ 4,86 / 5 — 7 verifierade recensioner",
 avis0:"Vi hade en helt underbar semester. Huset var vackert, fullt av rustik charm och mycket bra utrustat för en avkopplande familjesemester. Det kändes som hemma. Teamet var mycket lyhört för alla frågor. Vi kommer definitivt tillbaka.",
