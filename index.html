@@ -231,6 +231,13 @@ border-radius:10px;padding:20px 26px;margin-top:30px;flex-wrap:wrap;
 .book-card{background:var(--green);color:var(--bone);border-radius:14px;padding:38px;box-shadow:var(--shadow)}
 .book-card h3{color:var(--bone);font-size:1.5rem;margin-bottom:8px}
 .book-card p{color:rgba(243,239,230,.85);font-size:.95rem;margin-bottom:22px}
+.price-tag{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.price-from{font-size:.85rem;color:var(--brass-soft);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.price-amount{font-family:var(--serif);font-size:2.4rem;color:var(--bone);line-height:1}
+.price-unit{font-size:.85rem;color:rgba(243,239,230,.7)}
+.price-note{font-size:.8rem;color:rgba(243,239,230,.65);margin-bottom:20px;margin-top:2px}
+.cancel-policy{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;color:var(--green-soft);line-height:1.6}
+.cancel-policy strong{color:var(--green-deep)}
 .book-card .btn{width:100%;justify-content:center;margin-bottom:12px;font-size:.9rem;padding:15px}
 .season{margin-top:26px;border-top:1px solid rgba(243,239,230,.2);padding-top:20px}
 .season-row{display:flex;justify-content:space-between;font-size:.86rem;padding:7px 0;color:rgba(243,239,230,.85)}
@@ -556,6 +563,12 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C
 <div class="book-card reveal">
 <h3 data-i18n="book_card_t"></h3>
 <p data-i18n="book_card_p"></p>
+<div class="price-tag">
+<span class="price-from" data-i18n="price_from"></span>
+<span class="price-amount">450&nbsp;€</span>
+<span class="price-unit" data-i18n="price_unit"></span>
+</div>
+<p class="price-note" data-i18n="price_note"></p>
 <a class="btn" href="https://www.airbnb.fr/rooms/1688274496753120466" target="_blank" rel="noopener" data-i18n="book_airbnb"></a>
 <a class="btn ghost" href="#contact-anchor" data-i18n="book_direct" style="border-color:rgba(255,255,255,.5)"></a>
 <div class="season">
@@ -578,6 +591,10 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C
 </div>
 <div class="field"><label data-i18n="cf_msg"></label><textarea id="cf-msg" rows="4"></textarea></div>
 <button class="btn dark" id="cf-send" data-i18n="cf_send"></button>
+<div class="cancel-policy">
+<strong data-i18n="cancel_title"></strong>
+<p data-i18n="cancel_text"></p>
+</div>
 </div>
 </div>
 </div>
@@ -671,10 +688,12 @@ reg_eyebrow:"La région",reg_title:"Au cœur du Pays d'Auge",
 reg_p:"Entre mer et bocage, La Bécassière est le point de départ idéal pour explorer la côte normande : ports de pêche, plages élégantes, marchés et villages à colombages.",
 poi1_d:"Port, vieux bassin, galeries d'art",poi2_d:"Plages, planches & casinos",poi3_n:"Commerces & marché",poi3_d:"Premiers commerces du village",poi4_d:"Vue sur la Seine & le Havre",poi5_n:"Étretat & Côte d'Albâtre",poi5_d:"Falaises spectaculaires",
 book_eyebrow:"Disponibilités & réservation",book_title:"Réservez votre séjour",
+price_from:"À partir de",price_unit:"/ nuit",price_note:"Séjour minimum 2 nuits. Tarif de base hors saison et remises longs séjours ; le montant exact dépend des dates choisies.",
+cancel_title:"Annulation : ",cancel_text:"Remboursement intégral jusqu'à 30 jours avant l'arrivée. 50 % du montant entre 30 et 14 jours avant l'arrivée. Aucun remboursement en deçà de 14 jours.",
 book_card_t:"Réservation en ligne",book_card_p:"Consultez le calendrier en temps réel et réservez en quelques clics, paiement sécurisé via Airbnb.",
 book_airbnb:"Réserver sur Airbnb",book_direct:"Demande directe (séjours longs)",
-se1:"Haute saison (juil.–août)",se1p:"sur demande",se2:"Moyenne saison (mai, juin, sept.)",se2p:"sur demande",se3:"Basse saison",se3p:"tarif dégressif",
-se_note:"Remise automatique de -10 % dès 7 nuits, -15 % dès 14 nuits, déjà appliquée au montant total du séjour.",
+se1:"Séjour minimum",se1p:"2 nuits",se2:"Remise dès 7 nuits",se2p:"-10 %",se3:"Remise dès 14 nuits",se3p:"-15 %",
+se_note:"Remises automatiquement appliquées au montant total du séjour.",
 cf_t:"Une question, un séjour sur mesure ?",cf_p:"Écrivez-nous directement, nous répondons sous 24 h.",
 cf_name:"Nom",cf_email:"E-mail",cf_dates:"Dates souhaitées",cf_guests:"Voyageurs",cf_msg:"Message",cf_send:"Envoyer la demande",
 foot_tag:"Maison de famille normande & piscine chauffée, à 10 min de Honfleur.",
@@ -731,10 +750,12 @@ reg_eyebrow:"The region",reg_title:"In the heart of the Pays d'Auge",
 reg_p:"Between sea and countryside, La Bécassière is the perfect base to explore the Norman coast: fishing harbours, elegant beaches, markets and half-timbered villages.",
 poi1_d:"Harbour, old basin, art galleries",poi2_d:"Beaches, boardwalks & casinos",poi3_n:"Shops & market",poi3_d:"Nearest village shops",poi4_d:"Views over the Seine & Le Havre",poi5_n:"Étretat & Alabaster Coast",poi5_d:"Spectacular cliffs",
 book_eyebrow:"Availability & booking",book_title:"Book your stay",
+price_from:"From",price_unit:"/ night",price_note:"2-night minimum stay. Base off-season rate and long-stay discounts apply; exact amount depends on selected dates.",
+cancel_title:"Cancellation: ",cancel_text:"Full refund up to 30 days before arrival. 50% refund between 30 and 14 days before arrival. No refund within 14 days of arrival.",
 book_card_t:"Online booking",book_card_p:"Check the live calendar and book in a few clicks, with secure payment via Airbnb.",
 book_airbnb:"Book on Airbnb",book_direct:"Direct enquiry (long stays)",
-se1:"High season (Jul–Aug)",se1p:"on request",se2:"Mid season (May, Jun, Sep)",se2p:"on request",se3:"Low season",se3p:"reduced rates",
-se_note:"Automatic discount: -10% from 7 nights, -15% from 14 nights, already applied to the total stay amount.",
+se1:"Minimum stay",se1p:"2 nights",se2:"Discount from 7 nights",se2p:"-10%",se3:"Discount from 14 nights",se3p:"-15%",
+se_note:"Discounts automatically applied to the total stay amount.",
 cf_t:"A question, or a tailor-made stay?",cf_p:"Write to us directly — we reply within 24 hours.",
 cf_name:"Name",cf_email:"E-mail",cf_dates:"Preferred dates",cf_guests:"Guests",cf_msg:"Message",cf_send:"Send enquiry",
 foot_tag:"Norman family home & heated pool, 10 min from Honfleur.",
@@ -791,10 +812,12 @@ reg_eyebrow:"Die Region",reg_title:"Im Herzen des Pays d'Auge",
 reg_p:"Zwischen Meer und Bocage ist La Bécassière der ideale Ausgangspunkt, um die normannische Küste zu erkunden: Fischerhäfen, elegante Strände, Märkte und Fachwerkdörfer.",
 poi1_d:"Hafen, altes Becken, Kunstgalerien",poi2_d:"Strände, Promenaden & Casinos",poi3_n:"Geschäfte & Markt",poi3_d:"Nächste Dorfgeschäfte",poi4_d:"Blick auf Seine & Le Havre",poi5_n:"Étretat & Alabasterküste",poi5_d:"Spektakuläre Klippen",
 book_eyebrow:"Verfügbarkeit & Buchung",book_title:"Buchen Sie Ihren Aufenthalt",
+price_from:"Ab",price_unit:"/ Nacht",price_note:"Mindestaufenthalt 2 Nächte. Basispreis außerhalb der Saison, Rabatte für längere Aufenthalte inklusive; der genaue Betrag hängt vom gewählten Zeitraum ab.",
+cancel_title:"Stornierung: ",cancel_text:"Vollständige Rückerstattung bis 30 Tage vor Anreise. 50 % Rückerstattung zwischen 30 und 14 Tagen vor Anreise. Keine Rückerstattung innerhalb von 14 Tagen vor Anreise.",
 book_card_t:"Online buchen",book_card_p:"Sehen Sie den Live-Kalender und buchen Sie in wenigen Klicks, mit sicherer Zahlung über Airbnb.",
 book_airbnb:"Auf Airbnb buchen",book_direct:"Direkte Anfrage (Langzeit)",
-se1:"Hochsaison (Jul–Aug)",se1p:"auf Anfrage",se2:"Nebensaison (Mai, Jun, Sep)",se2p:"auf Anfrage",se3:"Vorsaison",se3p:"reduzierte Preise",
-se_note:"Automatischer Nachlass: -10 % ab 7 Nächten, -15 % ab 14 Nächten, bereits auf den Gesamtbetrag des Aufenthalts angewendet.",
+se1:"Mindestaufenthalt",se1p:"2 Nächte",se2:"Rabatt ab 7 Nächten",se2p:"-10 %",se3:"Rabatt ab 14 Nächten",se3p:"-15 %",
+se_note:"Rabatte werden automatisch auf den Gesamtbetrag des Aufenthalts angewendet.",
 cf_t:"Eine Frage oder ein maßgeschneiderter Aufenthalt?",cf_p:"Schreiben Sie uns direkt — wir antworten innerhalb von 24 Stunden.",
 cf_name:"Name",cf_email:"E-Mail",cf_dates:"Wunschtermine",cf_guests:"Gäste",cf_msg:"Nachricht",cf_send:"Anfrage senden",
 foot_tag:"Normannisches Familienhaus & beheizter Pool, 10 Min von Honfleur.",
@@ -851,10 +874,12 @@ reg_eyebrow:"Regionen",reg_title:"I hjärtat av Pays d'Auge",
 reg_p:"Mellan hav och landsbygd är La Bécassière den perfekta utgångspunkten för att utforska Normandies kust: fiskehamnar, eleganta stränder, marknader och korsvirkesbyar.",
 poi1_d:"Hamn, gamla bassängen, konstgallerier",poi2_d:"Stränder, strandpromenader & kasinon",poi3_n:"Butiker & marknad",poi3_d:"Närmaste byns butiker",poi4_d:"Utsikt över Seine & Le Havre",poi5_n:"Étretat & Alabasterkusten",poi5_d:"Spektakulära klippor",
 book_eyebrow:"Tillgänglighet & bokning",book_title:"Boka din vistelse",
+price_from:"Från",price_unit:"/ natt",price_note:"Minsta vistelse 2 nätter. Baspris utanför säsong, rabatter för längre vistelser tillämpas; exakt belopp beror på valda datum.",
+cancel_title:"Avbokning: ",cancel_text:"Full återbetalning upp till 30 dagar före ankomst. 50 % återbetalning mellan 30 och 14 dagar före ankomst. Ingen återbetalning inom 14 dagar före ankomst.",
 book_card_t:"Boka online",book_card_p:"Se kalendern i realtid och boka med några klick, säker betalning via Airbnb.",
 book_airbnb:"Boka på Airbnb",book_direct:"Direktförfrågan (längre vistelser)",
-se1:"Högsäsong (jul–aug)",se1p:"på begäran",se2:"Mellansäsong (maj, jun, sep)",se2p:"på begäran",se3:"Lågsäsong",se3p:"reducerade priser",
-se_note:"Automatisk rabatt: -10 % från 7 nätter, -15 % från 14 nätter, redan tillämpad på det totala beloppet för vistelsen.",
+se1:"Minsta vistelse",se1p:"2 nätter",se2:"Rabatt från 7 nätter",se2p:"-10 %",se3:"Rabatt från 14 nätter",se3p:"-15 %",
+se_note:"Rabatter tillämpas automatiskt på det totala beloppet för vistelsen.",
 cf_t:"En fråga eller en skräddarsydd vistelse?",cf_p:"Skriv direkt till oss — vi svarar inom 24 timmar.",
 cf_name:"Namn",cf_email:"E-post",cf_dates:"Önskade datum",cf_guests:"Gäster",cf_msg:"Meddelande",cf_send:"Skicka förfrågan",
 foot_tag:"Normandiskt familjehus & uppvärmd pool, 10 min från Honfleur.",
