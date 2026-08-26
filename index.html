@@ -104,6 +104,10 @@ position:absolute;inset:0;
 background:
 linear-gradient(180deg,rgba(20,30,22,.10) 0%,rgba(20,30,22,.30) 45%,rgba(20,30,22,.82) 100%),
 url('images/hero-piscine.jpg') center 38%/cover no-repeat;
+background-image:
+linear-gradient(180deg,rgba(20,30,22,.10) 0%,rgba(20,30,22,.30) 45%,rgba(20,30,22,.82) 100%),
+image-set(url('images/hero-piscine.webp') type('image/webp') 1x, url('images/hero-piscine.jpg') type('image/jpeg') 1x);
+background-position:center 38%;background-size:cover;background-repeat:no-repeat;
 }
 .hero .photo-note{
 position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
@@ -368,7 +372,7 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 </div>
 <div class="figure-stack reveal">
 <div class="figure alt">
-<img src="images/facade.jpg" alt="La Becassiere - facade normande a colombages">
+<picture><source srcset="images/facade.webp" type="image/webp"><img src="images/facade.jpg" alt="La Becassiere - facade normande a colombages"></picture>
 </div>
 </div>
 </div>
@@ -379,7 +383,7 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="wrap split">
 <div class="figure-stack reveal">
 <div class="figure alt">
-<img src="images/piscine.jpg" alt="Piscine chauffee de La Becassiere">
+<picture><source srcset="images/piscine.webp" type="image/webp"><img src="images/piscine.jpg" alt="Piscine chauffee de La Becassiere"></picture>
 </div>
 </div>
 <div class="reveal">
@@ -403,26 +407,26 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <h2 class="section-title" data-i18n="gal_title"></h2>
 </div>
 <div class="gallery-grid reveal">
-<div class="g tall"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></div>
-<div class="g"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></div>
-<div class="g"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></div>
-<div class="g"><img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage" loading="lazy"></div>
-<div class="g wide"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></div>
+<div class="g tall"><picture><source srcset="images/salle-a-manger.webp" type="image/webp"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/piscine.webp" type="image/webp"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/facade.webp" type="image/webp"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/chambre-bleue-1.webp" type="image/webp"><img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage" loading="lazy"></picture></div>
+<div class="g wide"><picture><source srcset="images/salon-cheminee.webp" type="image/webp"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></picture></div>
 <div class="g"><img src="images/jardin-piscine.jpg" alt="Jardin terrasse et piscine" loading="lazy"></div>
-<div class="g"><img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage" loading="lazy"></div>
-<div class="g wide"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></div>
-<div class="g"><img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin" loading="lazy"></div>
-<div class="g"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></div>
-<div class="g"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></div>
-<div class="g"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></div>
-<div class="g wide"><img src="images/trophees.jpg" alt="Trophees de chasse normande, decor authentique" loading="lazy"></div>
-<div class="g"><img src="images/etage.jpg" alt="Mezzanine et etage, mobilier ancien" loading="lazy"></div>
-<div class="g"><img src="images/porte-ancienne.jpg" alt="Porte ancienne en bois, detail architectural" loading="lazy"></div>
-<div class="g wide"><img src="images/salon-escalier.jpg" alt="Salon principal avec escalier en bois" loading="lazy"></div>
-<div class="g"><img src="images/salle-a-manger-2.jpg" alt="Salle a manger, vue depuis l'entree" loading="lazy"></div>
-<div class="g"><img src="images/salle-a-manger-3.jpg" alt="Salle a manger dressee" loading="lazy"></div>
-<div class="g wide"><img src="images/salon-cheminee-2.jpg" alt="Salon avec cheminee, autre angle" loading="lazy"></div>
-<div class="g"><img src="images/entree-escalier-2.jpg" alt="Entree et escalier en bois, autre angle" loading="lazy"></div>
+<div class="g"><picture><source srcset="images/chambre-verte-1.webp" type="image/webp"><img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage" loading="lazy"></picture></div>
+<div class="g wide"><picture><source srcset="images/salle-a-manger-honfleur.webp" type="image/webp"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/suite-rose-chambre.webp" type="image/webp"><img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/salle-de-jeux.webp" type="image/webp"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/cuisine-kitchen.webp" type="image/webp"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/bathroom-salle-bain.webp" type="image/webp"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></picture></div>
+<div class="g wide"><picture><source srcset="images/trophees.webp" type="image/webp"><img src="images/trophees.jpg" alt="Trophees de chasse normande, decor authentique" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/etage.webp" type="image/webp"><img src="images/etage.jpg" alt="Mezzanine et etage, mobilier ancien" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/porte-ancienne.webp" type="image/webp"><img src="images/porte-ancienne.jpg" alt="Porte ancienne en bois, detail architectural" loading="lazy"></picture></div>
+<div class="g wide"><picture><source srcset="images/salon-escalier.webp" type="image/webp"><img src="images/salon-escalier.jpg" alt="Salon principal avec escalier en bois" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/salle-a-manger-2.webp" type="image/webp"><img src="images/salle-a-manger-2.jpg" alt="Salle a manger, vue depuis l'entree" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/salle-a-manger-3.webp" type="image/webp"><img src="images/salle-a-manger-3.jpg" alt="Salle a manger dressee" loading="lazy"></picture></div>
+<div class="g wide"><picture><source srcset="images/salon-cheminee-2.webp" type="image/webp"><img src="images/salon-cheminee-2.jpg" alt="Salon avec cheminee, autre angle" loading="lazy"></picture></div>
+<div class="g"><picture><source srcset="images/entree-escalier-2.webp" type="image/webp"><img src="images/entree-escalier-2.jpg" alt="Entree et escalier en bois, autre angle" loading="lazy"></picture></div>
 </div>
 </div>
 </section>
@@ -471,22 +475,22 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="room-block">
 <h3 data-i18n="rb_blue"></h3>
 <div class="room-photos">
-<img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage, toile de Jouy">
-<img src="images/chambre-bleue-2.jpg" alt="Chambre bleue a l'etage, vue mezzanine">
+<picture><source srcset="images/chambre-bleue-1.webp" type="image/webp"><img src="images/chambre-bleue-1.jpg" alt="Chambre bleue a l'etage, toile de Jouy" loading="lazy"></picture>
+<picture><source srcset="images/chambre-bleue-2.webp" type="image/webp"><img src="images/chambre-bleue-2.jpg" alt="Chambre bleue a l'etage, vue mezzanine" loading="lazy"></picture>
 </div>
 </div>
 <div class="room-block">
 <h3 data-i18n="rb_green"></h3>
 <div class="room-photos">
-<img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage, papier peint rose et vert">
-<img src="images/chambre-verte-2.jpg" alt="Chambre verte a l'etage, fauteuils bordeaux">
+<picture><source srcset="images/chambre-verte-1.webp" type="image/webp"><img src="images/chambre-verte-1.jpg" alt="Chambre verte a l'etage, papier peint rose et vert" loading="lazy"></picture>
+<picture><source srcset="images/chambre-verte-2.webp" type="image/webp"><img src="images/chambre-verte-2.jpg" alt="Chambre verte a l'etage, fauteuils bordeaux" loading="lazy"></picture>
 </div>
 </div>
 <div class="room-block">
 <h3 data-i18n="rb_pink"></h3>
 <div class="room-photos">
-<img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin, vue sur le jardin">
-<img src="images/suite-rose-detente.jpg" alt="Suite Rose, espace detente attenant">
+<picture><source srcset="images/suite-rose-chambre.webp" type="image/webp"><img src="images/suite-rose-chambre.jpg" alt="Suite Rose au rez-de-jardin, vue sur le jardin" loading="lazy"></picture>
+<picture><source srcset="images/suite-rose-detente.webp" type="image/webp"><img src="images/suite-rose-detente.jpg" alt="Suite Rose, espace detente attenant" loading="lazy"></picture>
 </div>
 </div>
 </div>
