@@ -601,16 +601,9 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=0.18%2C49.36%2C0.34%2C
 <div class="contact-form reveal" id="contact-anchor">
 <h3 data-i18n="cf_t"></h3>
 <p data-i18n="cf_p"></p>
-<div class="two">
-<div class="field"><label data-i18n="cf_name"></label><input id="cf-name" type="text"></div>
-<div class="field"><label data-i18n="cf_email"></label><input id="cf-email" type="email"></div>
-</div>
-<div class="two">
-<div class="field"><label data-i18n="cf_dates"></label><input id="cf-dates" type="text" placeholder="—"></div>
-<div class="field"><label data-i18n="cf_guests"></label><input id="cf-guests" type="text" placeholder="—"></div>
-</div>
-<div class="field"><label data-i18n="cf_msg"></label><textarea id="cf-msg" rows="4"></textarea></div>
-<button class="btn dark" id="cf-send" data-i18n="cf_send"></button>
+<div id="apartmentIframe3490686"></div>
+<script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script>
+<script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/fr/booking-tool/iframe/1871606/3490686", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframe3490686"})</script>
 <div class="cancel-policy">
 <strong data-i18n="cancel_title"></strong>
 <p data-i18n="cancel_text"></p>
@@ -709,7 +702,7 @@ book_card_t:"Réservation en ligne",book_card_p:"Consultez le calendrier en temp
 book_airbnb:"Réserver sur Airbnb",book_direct:"Demande directe (séjours longs)",
 se1:"Séjour minimum",se1p:"2 nuits",se2:"Remise dès 7 nuits",se2p:"-10 %",se3:"Remise dès 14 nuits",se3p:"-15 %",
 se_note:"Remises automatiquement appliquées au montant total du séjour.",
-cf_t:"Une question, un séjour sur mesure ?",cf_p:"Écrivez-nous directement, nous répondons sous 24 h.",
+cf_t:"Réservez en direct",cf_p:"Consultez les disponibilités en temps réel et réservez directement, sans intermédiaire.",
 cf_name:"Nom",cf_email:"E-mail",cf_dates:"Dates souhaitées",cf_guests:"Voyageurs",cf_msg:"Message",cf_send:"Envoyer la demande",
 foot_tag:"Maison de famille normande & piscine chauffée, à 10 min de Honfleur.",
 foot_atout:"Classement 4★ Atout France — en cours",
@@ -766,7 +759,7 @@ book_card_t:"Online booking",book_card_p:"Check the live calendar and book in a 
 book_airbnb:"Book on Airbnb",book_direct:"Direct enquiry (long stays)",
 se1:"Minimum stay",se1p:"2 nights",se2:"Discount from 7 nights",se2p:"-10%",se3:"Discount from 14 nights",se3p:"-15%",
 se_note:"Discounts automatically applied to the total stay amount.",
-cf_t:"A question, or a tailor-made stay?",cf_p:"Write to us directly — we reply within 24 hours.",
+cf_t:"Book directly",cf_p:"Check real-time availability and book directly, with no middleman.",
 cf_name:"Name",cf_email:"E-mail",cf_dates:"Preferred dates",cf_guests:"Guests",cf_msg:"Message",cf_send:"Send enquiry",
 foot_tag:"Norman family home & heated pool, 10 min from Honfleur.",
 foot_atout:"4★ Atout France rating — in progress",
@@ -823,7 +816,7 @@ book_card_t:"Online buchen",book_card_p:"Sehen Sie den Live-Kalender und buchen 
 book_airbnb:"Auf Airbnb buchen",book_direct:"Direkte Anfrage (Langzeit)",
 se1:"Mindestaufenthalt",se1p:"2 Nächte",se2:"Rabatt ab 7 Nächten",se2p:"-10 %",se3:"Rabatt ab 14 Nächten",se3p:"-15 %",
 se_note:"Rabatte werden automatisch auf den Gesamtbetrag des Aufenthalts angewendet.",
-cf_t:"Eine Frage oder ein maßgeschneiderter Aufenthalt?",cf_p:"Schreiben Sie uns direkt — wir antworten innerhalb von 24 Stunden.",
+cf_t:"Direkt buchen",cf_p:"Prüfen Sie die Verfügbarkeit in Echtzeit und buchen Sie direkt, ohne Vermittler.",
 cf_name:"Name",cf_email:"E-Mail",cf_dates:"Wunschtermine",cf_guests:"Gäste",cf_msg:"Nachricht",cf_send:"Anfrage senden",
 foot_tag:"Normannisches Familienhaus & beheizter Pool, 10 Min von Honfleur.",
 foot_atout:"4★ Atout-France-Klassifizierung — in Bearbeitung",
@@ -880,7 +873,7 @@ book_card_t:"Boka online",book_card_p:"Se kalendern i realtid och boka med någr
 book_airbnb:"Boka på Airbnb",book_direct:"Direktförfrågan (längre vistelser)",
 se1:"Minsta vistelse",se1p:"2 nätter",se2:"Rabatt från 7 nätter",se2p:"-10 %",se3:"Rabatt från 14 nätter",se3p:"-15 %",
 se_note:"Rabatter tillämpas automatiskt på det totala beloppet för vistelsen.",
-cf_t:"En fråga eller en skräddarsydd vistelse?",cf_p:"Skriv direkt till oss — vi svarar inom 24 timmar.",
+cf_t:"Boka direkt",cf_p:"Se tillgänglighet i realtid och boka direkt, utan mellanhand.",
 cf_name:"Namn",cf_email:"E-post",cf_dates:"Önskade datum",cf_guests:"Gäster",cf_msg:"Meddelande",cf_send:"Skicka förfrågan",
 foot_tag:"Normandiskt familjehus & uppvärmd pool, 10 min från Honfleur.",
 foot_atout:"4★ Atout France-klassning — pågår",
@@ -922,17 +915,6 @@ menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classL
 /* ====== Reveal on scroll ====== */
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}}),{threshold:.15});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-
-/* ====== Contact -> mailto ====== */
-document.getElementById("cf-send").addEventListener("click",()=>{
-const v=id=>document.getElementById(id).value.trim();
-const L={fr:["Demande de réservation — La Bécassière","Bonjour,","Nom","E-mail","Dates","Voyageurs","Message"],
-en:["Booking enquiry — La Bécassière","Hello,","Name","E-mail","Dates","Guests","Message"],
-de:["Buchungsanfrage — La Bécassière","Hallo,","Name","E-Mail","Termine","Gäste","Nachricht"],
-sv:["Bokningsförfrågan — La Bécassière","Hej,","Namn","E-post","Datum","Gäster","Meddelande"]}[currentLang];
-const body=`${L[1]}%0D%0A%0D%0A${L[2]}: ${v("cf-name")}%0D%0A${L[3]}: ${v("cf-email")}%0D%0A${L[4]}: ${v("cf-dates")}%0D%0A${L[5]}: ${v("cf-guests")}%0D%0A%0D%0A${L[6]}:%0D%0A${v("cf-msg")}`;
-window.location.href=`mailto:provostcgmn@gmail.com?subject=${encodeURIComponent(L[0])}&body=${body}`;
-});
 </script>
 </body>
 </html>
