@@ -161,6 +161,12 @@ text-align:center;padding:20px;
 .pool p{color:rgba(243,239,230,.85)}
 .pool .split{align-items:center}
 .pool .figure .ph{background-color:#26392c}
+.pool-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,220px);gap:14px;margin-top:44px}
+.pool-gallery a{grid-row:span 2;border-radius:8px;overflow:hidden;display:block}
+.pool-gallery div{border-radius:8px;overflow:hidden}
+.pool-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.pool-gallery a:hover img,.pool-gallery div:hover img{transform:scale(1.04)}
+@media(max-width:880px){.pool-gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.pool-gallery a{grid-row:span 1;grid-column:span 2}}
 .pool-stats{display:flex;gap:34px;margin-top:1.8rem;flex-wrap:wrap}
 .pool-stats .n{font-family:var(--serif);font-size:2rem;color:var(--brass-soft);line-height:1}
 .pool-stats .l{font-size:.78rem;letter-spacing:.04em;color:rgba(243,239,230,.7);margin-top:4px}
@@ -397,6 +403,14 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 </div>
 </div>
 </div>
+<div class="wrap">
+<div class="pool-gallery reveal">
+<div><picture><source srcset="images/piscine-2.webp" type="image/webp"><img src="images/piscine-2.jpg" alt="Piscine chauffee, vue sur la maison" loading="lazy"></picture></div>
+<div><picture><source srcset="images/piscine-3.webp" type="image/webp"><img src="images/piscine-3.jpg" alt="Piscine chauffee et terrasse" loading="lazy"></picture></div>
+<div><picture><source srcset="images/piscine-4.webp" type="image/webp"><img src="images/piscine-4.jpg" alt="Piscine chauffee, vue depuis le jardin" loading="lazy"></picture></div>
+<div><picture><source srcset="images/piscine-5.webp" type="image/webp"><img src="images/piscine-5.jpg" alt="Piscine chauffee, vue d'ensemble" loading="lazy"></picture></div>
+</div>
+</div>
 </section>
 
 <!-- ============ GALERIE ============ -->
@@ -408,18 +422,13 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 </div>
 <div class="gallery-grid reveal">
 <div class="g tall"><picture><source srcset="images/salle-a-manger.webp" type="image/webp"><img src="images/salle-a-manger.jpg" alt="Salle a manger - grande table en chene" loading="lazy"></picture></div>
-<div class="g"><picture><source srcset="images/piscine.webp" type="image/webp"><img src="images/piscine.jpg" alt="Piscine chauffee" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/facade.webp" type="image/webp"><img src="images/facade.jpg" alt="Facade normande a colombages" loading="lazy"></picture></div>
-<div class="g"><picture><source srcset="images/piscine-2.webp" type="image/webp"><img src="images/piscine-2.jpg" alt="Piscine chauffee, vue sur la maison" loading="lazy"></picture></div>
 <div class="g wide"><picture><source srcset="images/salon-cheminee.webp" type="image/webp"><img src="images/salon-cheminee.jpg" alt="Salon avec cheminee et poele a bois" loading="lazy"></picture></div>
-<div class="g"><picture><source srcset="images/piscine-3.webp" type="image/webp"><img src="images/piscine-3.jpg" alt="Piscine chauffee et terrasse" loading="lazy"></picture></div>
 <div class="g wide"><picture><source srcset="images/salle-a-manger-honfleur.webp" type="image/webp"><img src="images/salle-a-manger-honfleur.jpg" alt="Salle a manger et aquarelles de Honfleur" loading="lazy"></picture></div>
-<div class="g"><picture><source srcset="images/piscine-4.webp" type="image/webp"><img src="images/piscine-4.jpg" alt="Piscine chauffee, vue depuis le jardin" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/salle-de-jeux.webp" type="image/webp"><img src="images/salle-de-jeux.jpg" alt="Salle de jeux et television" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/cuisine-kitchen.webp" type="image/webp"><img src="images/cuisine-kitchen.jpg" alt="Cuisine equipee avec lave-vaisselle" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/bathroom-salle-bain.webp" type="image/webp"><img src="images/bathroom-salle-bain.jpg" alt="Salle de bain spacieuse" loading="lazy"></picture></div>
 <div class="g wide"><picture><source srcset="images/trophees.webp" type="image/webp"><img src="images/trophees.jpg" alt="Trophees de chasse normande, decor authentique" loading="lazy"></picture></div>
-<div class="g"><picture><source srcset="images/piscine-5.webp" type="image/webp"><img src="images/piscine-5.jpg" alt="Piscine chauffee, vue d'ensemble" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/porte-ancienne.webp" type="image/webp"><img src="images/porte-ancienne.jpg" alt="Porte ancienne en bois, detail architectural" loading="lazy"></picture></div>
 <div class="g wide"><picture><source srcset="images/salon-escalier.webp" type="image/webp"><img src="images/salon-escalier.jpg" alt="Salon principal avec escalier en bois" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/salle-a-manger-2.webp" type="image/webp"><img src="images/salle-a-manger-2.jpg" alt="Salle a manger, vue depuis l'entree" loading="lazy"></picture></div>
