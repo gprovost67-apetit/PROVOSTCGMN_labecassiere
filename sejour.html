@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votre séjour · La Bécassière</title>
+<meta name="description" content="Guide d'accueil des voyageurs de La Bécassière — wifi, accès, piscine, équipements et bonnes adresses.">
+<!-- Page privée réservée aux voyageurs : non indexée -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b2a21; --green:#2f4734; --green-deep:#1c2c21; --green-soft:#46604e;
+  --bone:#f3efe6; --bone-2:#e8e1d3; --card:#faf7f0; --brass:#b08a46; --brass-soft:#c9a967;
+  --tomette:#a8553a; --line:rgba(27,42,33,.14); --shadow:0 18px 50px -22px rgba(28,44,33,.45);
+  --maxw:720px; --serif:"Fraunces",Georgia,serif; --sans:"Mulish",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--sans);color:var(--ink);background:var(--bone);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--green);text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* Header */
+header{background:var(--green-deep);color:var(--bone);padding:34px 0 28px;text-align:center}
+header .eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-soft)}
+header h1{font-family:var(--serif);font-weight:500;font-size:2.1rem;line-height:1.05;margin:.35rem 0 .3rem;letter-spacing:-.01em}
+header p{font-size:.95rem;color:rgba(243,239,230,.82)}
+
+/* Quick nav */
+.quicknav{position:sticky;top:0;z-index:50;background:rgba(243,239,230,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.quicknav .wrap{display:flex;gap:6px;padding:10px 20px}
+.quicknav a{font-size:.8rem;font-weight:600;color:var(--green);padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;flex:0 0 auto}
+.quicknav a:active{background:var(--green);color:var(--bone)}
+
+/* Essentials grid */
+.ess{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0 8px}
+.ess .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;box-shadow:var(--shadow)}
+.ess .card .lbl{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);display:block;margin-bottom:5px}
+.ess .card .val{font-size:1rem;font-weight:600;color:var(--green-deep)}
+.ess .card .val small{display:block;font-weight:400;font-size:.82rem;color:var(--green-soft);margin-top:2px}
+.ess .card.wide{grid-column:1 / -1}
+.ess .card .code{font-family:var(--serif);font-size:1.15rem;color:var(--tomette);letter-spacing:.02em}
+
+/* Sections */
+section{padding:26px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);display:inline-flex;align-items:center;gap:.55em}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--brass);display:inline-block}
+h2{font-family:var(--serif);font-weight:500;font-size:1.55rem;line-height:1.12;color:var(--green-deep);margin:.4rem 0 .9rem;letter-spacing:-.01em}
+h3{font-family:var(--serif);font-weight:500;font-size:1.1rem;color:var(--green);margin:1.1rem 0 .4rem}
+p{margin:0 0 .75rem;color:var(--ink)}
+.lead{font-size:1.02rem;color:var(--green-soft)}
+ul{list-style:none;margin:.2rem 0 .8rem}
+ul li{position:relative;padding:4px 0 4px 20px;color:var(--ink)}
+ul li::before{content:"";position:absolute;left:2px;top:13px;width:6px;height:6px;border-radius:50%;background:var(--brass)}
+strong{color:var(--green-deep);font-weight:700}
+.note{background:var(--card);border-left:3px solid var(--brass);border-radius:0 12px 12px 0;padding:12px 15px;margin:.5rem 0 .9rem;font-size:.92rem}
+.note b{color:var(--brass)}
+.hr-soft{height:1px;background:var(--line);border:0;margin:1rem 0}
+
+/* Emergency + contact */
+.contact{background:var(--green-deep);color:var(--bone);border-radius:18px;padding:22px 20px;margin:8px 0}
+.contact h2{color:var(--bone)}
+.contact a{color:var(--brass-soft);font-weight:600}
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.phones .p{background:rgba(255,255,255,.07);border-radius:12px;padding:10px 12px}
+.phones .p span{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-soft)}
+.phones .p b{font-size:1.1rem;color:var(--bone)}
+.btn-call{display:inline-block;margin-top:14px;background:var(--brass);color:#2a1e0e;font-weight:700;padding:12px 20px;border-radius:999px}
+
+/* Checklist */
+.check li::before{content:"✓";background:none;color:var(--brass);font-weight:700;top:4px;left:0;width:auto;height:auto}
+.check li{padding-left:22px}
+
+footer{text-align:center;padding:30px 20px 46px;color:var(--green-soft);font-size:.82rem}
+footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
+
+.totop{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--green-deep);color:var(--bone);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s}
+.totop.show{opacity:1;pointer-events:auto}
+
+@media(min-width:560px){header h1{font-size:2.5rem}.ess{grid-template-columns:1fr 1fr 1fr}.ess .card.wide{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Genneville · Pays d'Auge</div>
+    <h1>Bienvenue à La&nbsp;Bécassière</h1>
+    <p>Votre guide de séjour — tout est là, à portée de main.</p>
+  </div>
+</header>
+
+<nav class="quicknav">
+  <div class="wrap">
+    <a href="#essentiel">L'essentiel</a>
+    <a href="#arriver">Arriver</a>
+    <a href="#wifi">Wi-Fi</a>
+    <a href="#maison">La maison</a>
+    <a href="#equipements">Équipements</a>
+    <a href="#piscine">Piscine</a>
+    <a href="#regles">Règles</a>
+    <a href="#environs">Les environs</a>
+    <a href="#depart">Départ</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- ESSENTIEL -->
+  <section id="essentiel" style="border-top:none">
+    <div class="ess">
+      <div class="card wide">
+        <span class="lbl">Wi-Fi</span>
+        <div class="val">Livebox640-Ext<small>Mot de passe : <span class="code">c6CfkVk5P5fX6DtT34</span></small></div>
+      </div>
+      <div class="card wide">
+        <span class="lbl">Adresse</span>
+        <div class="val" style="font-size:.95rem">2337 route de Saint-Martin, 14600 Genneville</div>
+      </div>
+      <div class="card">
+        <span class="lbl">Capacité</span>
+        <div class="val">7 voyageurs<small>3 chambres</small></div>
+      </div>
+      <div class="card">
+        <span class="lbl">Piscine</span>
+        <div class="val">9h – 21h<small>chauffée, mai–sept.</small></div>
+      </div>
+      <div class="card">
+        <span class="lbl">Silence</span>
+        <div class="val">22h – 8h<small>extérieur</small></div>
+      </div>
+      <div class="card wide">
+        <span class="lbl">Votre hôte</span>
+        <div class="val">Grégoire — <a href="tel:+33610059557" style="color:var(--tomette)">06 10 05 95 57</a><small>Non-fumeur · animaux non admis · parking gratuit sur place</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOT -->
+  <section>
+    <div class="eyebrow">Bienvenue</div>
+    <h2>Une maison de famille, à vivre avec soin</h2>
+    <p class="lead">Nous sommes très heureux de vous accueillir. Transmise de génération en génération et nichée dans un écrin de verdure, La Bécassière doit son nom aux bois alentour, où les bécasses trouvent refuge l'hiver.</p>
+    <p>Le charme de l'ancien y est pleinement assumé : poutres apparentes, tomettes patinées, meubles chinés et objets de famille. Prenez-en soin comme s'il s'agissait de la maison d'un proche — c'est exactement ce que nous vous confions. Belle arrivée, et excellent séjour !</p>
+  </section>
+
+  <!-- ARRIVER -->
+  <section id="arriver">
+    <div class="eyebrow">Arriver</div>
+    <h2>Rejoindre La Bécassière</h2>
+    <h3>En voiture</h3>
+    <p>Saisissez l'adresse dans <strong>Waze</strong> : « 2337 route de Saint-Martin, Genneville 14600 ». Il faut impérativement arriver <strong>par la route de Saint-Martin</strong>.</p>
+    <ul>
+      <li>Les autres applications (Google Maps…) ne donnent pas toujours le bon chemin et peuvent vous envoyer sur des routes inaccessibles.</li>
+      <li>La maison se trouve 250 m plus loin qu'un gîte nommé « Grand Clos Saint-Martin ».</li>
+      <li>L'accès est repéré par le numéro <strong>2337</strong> et par la boîte aux lettres sur votre gauche, sur un piquet en bois.</li>
+    </ul>
+    <div class="note"><b>Bon à savoir —</b> la maison est dans une vallée, le réseau mobile y capte parfois mal. Téléchargez votre itinéraire à l'avance.</div>
+    <h3>En train</h3>
+    <p>Gare la plus proche : <strong>Pont-l'Évêque</strong> (15 min). Depuis Paris Saint-Lazare, environ 2h11 en direct ou avec une correspondance.</p>
+  </section>
+
+  <!-- WIFI -->
+  <section id="wifi">
+    <div class="eyebrow">Connexion</div>
+    <h2>Wi-Fi</h2>
+    <p>La box fibre Orange se trouve <strong>à droite de la porte d'entrée</strong>.</p>
+    <ul>
+      <li>Sur la box, faites défiler jusqu'à « Wi-Fi » pour afficher un QR code : scannez-le avec l'appareil photo de votre smartphone, la connexion se fait automatiquement.</li>
+      <li>Vous pouvez aussi vous connecter à l'extension <strong>Livebox640-Ext</strong> — mot de passe <strong>c6CfkVk5P5fX6DtT34</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- MAISON -->
+  <section id="maison">
+    <div class="eyebrow">La maison</div>
+    <h2>Niveau par niveau</h2>
+    <p>La maison se déploie sur trois niveaux, décorés d'objets et de meubles anciens dans l'esprit des grandes demeures normandes.</p>
+    <ul>
+      <li><strong>Rez-de-chaussée —</strong> salon avec cheminée, salle à manger, cuisine équipée et WC.</li>
+      <li><strong>1ᵉʳ étage —</strong> 2 chambres, une salle de bains et un WC séparé.</li>
+      <li><strong>Rez-de-jardin —</strong> grande chambre avec vue sur le jardin, salle de bains, WC et espace détente / salle de jeu-TV.</li>
+    </ul>
+    <p>À l'extérieur : grand jardin arboré privatif, terrasse, piscine, barbecue, plancha et brasero. Un bois familial, au-dessus de la maison, invite à de belles promenades.</p>
+  </section>
+
+  <!-- EQUIPEMENTS -->
+  <section id="equipements">
+    <div class="eyebrow">Équipements</div>
+    <h2>Tout le confort</h2>
+    <h3>Cuisine</h3>
+    <p>Plaques à induction, four, micro-ondes, lave-vaisselle, réfrigérateur, congélateur, grille-pain, bouilloire, machine à café Nespresso, vaisselle, verres à vin et ustensiles de base.</p>
+    <div class="note"><b>Machine à glaçons —</b> versez simplement un fond d'eau dans le bac (celui-là même où vous récupérerez les glaçons).</div>
+    <h3>Confort &amp; buanderie</h3>
+    <p>Lave-linge, sèche-cheveux, rangements. Linge fourni et lits faits à votre arrivée. Produits de base à disposition : serviettes, draps, savon, gel douche, papier toilette.</p>
+    <h3>Familles &amp; sécurité</h3>
+    <p>Lit parapluie, livres et jouets pour enfants, télévision. La maison est équipée de détecteurs de fumée, d'un détecteur de monoxyde de carbone, d'un extincteur et d'une trousse de premiers secours.</p>
+  </section>
+
+  <!-- PISCINE -->
+  <section id="piscine">
+    <div class="eyebrow">Extérieur</div>
+    <h2>La piscine</h2>
+    <p>La piscine chauffée est l'un des grands plaisirs de la maison. Pour que chacun en profite en sécurité, quelques règles simples.</p>
+    <h3>Ouverture</h3>
+    <ul>
+      <li>L'ouverture se fait avec un moteur, à l'aide de la <strong>clé située à gauche de la porte du bâtiment</strong> (bâtiment fermé).</li>
+      <li>Soyez vigilant à l'ouverture pour ne pas bloquer les lattes du rideau.</li>
+    </ul>
+    <h3>Sécurité &amp; bon usage</h3>
+    <ul>
+      <li><strong>Horaires : 9h – 21h</strong> uniquement.</li>
+      <li>Baignade sous l'entière responsabilité des voyageurs. Enfants surveillés par un adulte à tout moment — jamais seuls au bord ou dans l'eau.</li>
+      <li>Pas de verre autour du bassin, on ne court pas, on ne pousse personne, pas de baignade en état d'ivresse.</li>
+      <li>Accès réservé aux personnes inscrites à la réservation.</li>
+    </ul>
+  </section>
+
+  <!-- REGLES -->
+  <section id="regles">
+    <div class="eyebrow">Vivre la maison</div>
+    <h2>Nos quelques règles</h2>
+    <p>Elles tiennent en une idée : préserver le charme, le calme et l'authenticité du lieu.</p>
+    <ul>
+      <li><strong>Soin de la maison —</strong> merci de ne pas déplacer les meubles anciens, objets, tableaux ou luminaires ; certains ont une valeur sentimentale. Signalez-nous tout incident sans attendre.</li>
+      <li><strong>Non-fumeur —</strong> toute la maison. À l'extérieur, utilisez un cendrier.</li>
+      <li><strong>Animaux non admis —</strong> règle stricte.</li>
+      <li><strong>Calme &amp; voisinage —</strong> pas de fêtes ni de soirées bruyantes. Silence extérieur de 22h à 8h.</li>
+      <li><strong>Capacité —</strong> ne pas dépasser le nombre de voyageurs de la réservation ; visiteurs à valider au préalable.</li>
+      <li><strong>Repas —</strong> merci de ne pas manger dans les chambres.</li>
+      <li><strong>Cheminée —</strong> ne jamais laisser un feu sans surveillance ; utiliser uniquement le bois adapté. Bois supplémentaire sur demande (à partir de 30 €).</li>
+    </ul>
+    <div class="note"><b>Bon à savoir —</b> le jardin, ouvert et non clôturé, jouxte une autre maison de famille. Un petit chenil voisin abrite quelques chiens : merci de ne pas les approcher.</div>
+    <h3>Tri &amp; déchets</h3>
+    <ul>
+      <li><strong>Collecte : mardi et jeudi.</strong> Les bacs de recyclage se trouvent à Genneville.</li>
+      <li>Aucun déchet laissé dans le jardin ou près de la piscine.</li>
+    </ul>
+  </section>
+
+  <!-- ENVIRONS -->
+  <section id="environs">
+    <div class="eyebrow">Découvrir</div>
+    <h2>Les environs</h2>
+    <h3>Honfleur — 8 km (10 min)</h3>
+    <p>Le Vieux Bassin, l'église Sainte-Catherine en bois, les quais et les galeries. À voir tôt le matin ou en fin de journée.</p>
+    <h3>Deauville &amp; Trouville — env. 30 min</h3>
+    <p>Les planches, les grandes plages et le marché de Trouville. Parfait pour une journée bord de mer.</p>
+    <h3>Pont-l'Évêque — 15 min</h3>
+    <p>Petite ville normande de charme, son fromage AOP, et la gare la plus proche.</p>
+    <h3>Autour de la maison</h3>
+    <p>Le bois familial pour les promenades, la Côte de Grâce et ses points de vue, et les marchés des villages pour les produits normands (cidre, fromages, beurre, pommes).</p>
+  </section>
+
+  <!-- DEPART -->
+  <section id="depart">
+    <div class="eyebrow">Avant de partir</div>
+    <h2>Check-list de départ</h2>
+    <ul class="check">
+      <li>Vaisselle lavée ou dans le lave-vaisselle, plans de travail nettoyés.</li>
+      <li>Déchets déposés dans les poubelles ; aliments rangés ou emportés.</li>
+      <li>Fenêtres fermées, lumières éteintes, appareils de cuisson arrêtés.</li>
+      <li>Cheminée parfaitement éteinte (si utilisée).</li>
+      <li>Piscine refermée et clé rangée.</li>
+      <li>Portes verrouillées et clés remises dans la boîte à clés.</li>
+    </ul>
+    <p>Le ménage de fin de séjour est inclus. Nous vous demandons simplement de rendre la maison dans un état respectueux.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact">
+      <div class="eyebrow" style="color:var(--brass-soft)">Besoin d'aide ?</div>
+      <h2>Contact &amp; urgences</h2>
+      <p style="color:rgba(243,239,230,.85)">La moindre question pendant votre séjour : appelez ou écrivez-nous, nous sommes là pour que tout se passe bien.</p>
+      <a class="btn-call" href="tel:+33610059557">Appeler Grégoire · 06 10 05 95 57</a>
+      <div class="phones">
+        <div class="p"><span>SAMU</span><b>15</b></div>
+        <div class="p"><span>Police</span><b>17</b></div>
+        <div class="p"><span>Pompiers</span><b>18</b></div>
+        <div class="p"><span>Urgences UE</span><b>112</b></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="mark">La Bécassière</div>
+  Maison de chasse normande · Genneville, Pays d'Auge<br>
+  Merci de votre confiance, et très bon séjour.
+</footer>
+
+<a href="#" class="totop" aria-label="Haut de page">↑</a>
+
+<script>
+  var totop=document.querySelector('.totop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>600){totop.classList.add('show')}else{totop.classList.remove('show')}
+  },{passive:true});
+</script>
+</body>
+</html>
