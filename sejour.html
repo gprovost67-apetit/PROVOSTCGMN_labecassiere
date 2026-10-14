@@ -82,6 +82,10 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
 
 .totop{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--green-deep);color:var(--bone);width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s}
 .totop.show{opacity:1;pointer-events:auto}
+.hero-img{width:100%;height:230px;object-fit:cover;object-position:center 58%;display:block}
+.photo{width:100%;border-radius:14px;margin:.4rem 0 1rem;box-shadow:var(--shadow);object-fit:cover;display:block}
+figure{margin:0 0 1rem}
+figcaption{font-size:.8rem;color:var(--green-soft);text-align:center;margin-top:-.6rem}
 
 @media(min-width:560px){header h1{font-size:2.5rem}.ess{grid-template-columns:1fr 1fr 1fr}.ess .card.wide{grid-column:1 / -1}}
 </style>
@@ -95,6 +99,8 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
     <p>Votre guide de séjour — tout est là, à portée de main.</p>
   </div>
 </header>
+
+<img class="hero-img" src="/images/hero-piscine-2.webp" alt="La piscine chauffée de La Bécassière">
 
 <nav class="quicknav">
   <div class="wrap">
@@ -138,7 +144,7 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
       </div>
       <div class="card wide">
         <span class="lbl">Votre hôte</span>
-        <div class="val">Grégoire — <a href="tel:+33610059557" style="color:var(--tomette)">06 10 05 95 57</a><small>Non-fumeur · animaux non admis · parking gratuit sur place</small></div>
+        <div class="val">Caroline — <a href="tel:+33610059557" style="color:var(--tomette)">06 10 05 95 57</a><small>Non-fumeur · animaux non admis · parking gratuit sur place</small></div>
       </div>
     </div>
   </section>
@@ -189,6 +195,7 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
       <li><strong>Rez-de-jardin —</strong> grande chambre avec vue sur le jardin, salle de bains, WC et espace détente / salle de jeu-TV.</li>
     </ul>
     <p>À l'extérieur : grand jardin arboré privatif, terrasse, piscine, barbecue, plancha et brasero. Un bois familial, au-dessus de la maison, invite à de belles promenades.</p>
+    <img class="photo" src="/images/salon-cheminee.jpg" alt="Salon avec cheminée" loading="lazy">
   </section>
 
   <!-- EQUIPEMENTS -->
@@ -197,6 +204,7 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
     <h2>Tout le confort</h2>
     <h3>Cuisine</h3>
     <p>Plaques à induction, four, micro-ondes, lave-vaisselle, réfrigérateur, congélateur, grille-pain, bouilloire, machine à café Nespresso, vaisselle, verres à vin et ustensiles de base.</p>
+    <img class="photo" src="/images/cuisine-kitchen.jpg" alt="La cuisine équipée" loading="lazy">
     <div class="note"><b>Machine à glaçons —</b> versez simplement un fond d'eau dans le bac (celui-là même où vous récupérerez les glaçons).</div>
     <h3>Confort &amp; buanderie</h3>
     <p>Lave-linge, sèche-cheveux, rangements. Linge fourni et lits faits à votre arrivée. Produits de base à disposition : serviettes, draps, savon, gel douche, papier toilette.</p>
@@ -209,6 +217,7 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
     <div class="eyebrow">Extérieur</div>
     <h2>La piscine</h2>
     <p>La piscine chauffée est l'un des grands plaisirs de la maison. Pour que chacun en profite en sécurité, quelques règles simples.</p>
+    <img class="photo" src="/images/piscine.webp" alt="La piscine chauffée" loading="lazy">
     <h3>Ouverture</h3>
     <ul>
       <li>L'ouverture se fait avec un moteur, à l'aide de la <strong>clé située à gauche de la porte du bâtiment</strong> (bâtiment fermé).</li>
@@ -240,15 +249,21 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
     <div class="note"><b>Bon à savoir —</b> le jardin, ouvert et non clôturé, jouxte une autre maison de famille. Un petit chenil voisin abrite quelques chiens : merci de ne pas les approcher.</div>
     <h3>Tri &amp; déchets</h3>
     <ul>
-      <li><strong>Collecte : mardi et jeudi.</strong> Les bacs de recyclage se trouvent à Genneville.</li>
+      <li>Une <strong>poubelle de tri</strong> (verre, plastique, carton) se trouve à Genneville, à droite de l'église, tout de suite après la route.</li>
+      <li>Un <strong>autre point de dépôt</strong> (déchets courants et recyclage) est à l'angle de la Route de Genneville et de la Route de la Côte Ransue, à moins de 4 min de la maison.</li>
       <li>Aucun déchet laissé dans le jardin ou près de la piscine.</li>
     </ul>
+    <figure>
+      <img class="photo" src="/images/depot-dechets.png" alt="Plan du second point de dépôt des déchets" loading="lazy">
+      <figcaption>Le second point de dépôt, à l'angle de la Route de Genneville et de la Côte Ransue.</figcaption>
+    </figure>
   </section>
 
   <!-- ENVIRONS -->
   <section id="environs">
     <div class="eyebrow">Découvrir</div>
     <h2>Les environs</h2>
+    <img class="photo" src="/images/jardin-maison-1.webp" alt="Le jardin de La Bécassière" loading="lazy">
     <h3>Honfleur — 8 km (10 min)</h3>
     <p>Le Vieux Bassin, l'église Sainte-Catherine en bois, les quais et les galeries. À voir tôt le matin ou en fin de journée.</p>
     <h3>Deauville &amp; Trouville — env. 30 min</h3>
@@ -280,7 +295,7 @@ footer .mark{font-family:var(--serif);color:var(--green);font-size:1rem}
       <div class="eyebrow" style="color:var(--brass-soft)">Besoin d'aide ?</div>
       <h2>Contact &amp; urgences</h2>
       <p style="color:rgba(243,239,230,.85)">La moindre question pendant votre séjour : appelez ou écrivez-nous, nous sommes là pour que tout se passe bien.</p>
-      <a class="btn-call" href="tel:+33610059557">Appeler Grégoire · 06 10 05 95 57</a>
+      <a class="btn-call" href="tel:+33610059557">Appeler Caroline · 06 10 05 95 57</a>
       <div class="phones">
         <div class="p"><span>SAMU</span><b>15</b></div>
         <div class="p"><span>Police</span><b>17</b></div>
