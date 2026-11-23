@@ -308,6 +308,29 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 .g.wide{grid-column:span 1}.g.tall{grid-row:span 1}
 .pool-stats{gap:22px}
 }
+
+@media(min-width:881px) and (max-width:1100px){.menu{gap:14px}.menu a{white-space:nowrap;font-size:.78rem}.nav-right{gap:10px}.lang button{padding-left:7px;padding-right:7px}.nav-right .btn{padding-left:16px;padding-right:16px}.nav{gap:14px}.brand .name{font-size:1.1rem}}
+/* ===== HIVER ===== */
+.winter{background:#16120e;color:var(--bone);position:relative;overflow:hidden}
+.winter::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 78% 30%,rgba(214,140,60,.16),transparent 70%);pointer-events:none}
+.winter .wrap{position:relative}
+.winter .eyebrow{color:var(--brass-soft)}.winter .eyebrow::before{background:var(--brass-soft)}
+.winter .section-title{color:var(--bone)}
+.winter p{color:rgba(243,239,230,.82);font-size:1.06rem;margin-top:1rem}
+.winter .figure{aspect-ratio:4/5;box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.winter-moments{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:18px}
+.winter-moments li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline;border-top:1px solid rgba(201,169,103,.22);padding-top:16px}
+.winter-moments .k{font-family:var(--serif);font-style:italic;color:var(--brass-soft);font-size:1.5rem;line-height:1}
+.winter-moments b{display:block;font-family:var(--serif);font-weight:500;font-size:1.15rem;color:var(--bone)}
+.winter-moments span{font-size:.95rem;color:rgba(243,239,230,.7)}
+.winter .btn{margin-top:2rem}
+.winter-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;gap:14px;margin-top:56px}
+.winter-grid div{border-radius:6px;overflow:hidden}
+.winter-grid .tall{grid-row:span 2}
+.winter-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.winter-grid div:hover img{transform:scale(1.04)}
+@media(max-width:880px){.winter-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}}
+@media(max-width:560px){.winter-grid{grid-auto-rows:170px;gap:10px}}
 </style>
 <script src="consent.js" defer></script>
 </head>
@@ -330,6 +353,7 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <li><a href="#maison" data-i18n="nav_house"></a></li>
 <li><a href="#piscine" data-i18n="nav_pool"></a></li>
 <li><a href="#galerie" data-i18n="nav_gallery"></a></li>
+<li><a href="#hiver" data-i18n="nav_winter"></a></li>
 <li><a href="#chambres" data-i18n="nav_rooms"></a></li>
 <li><a href="#avis" data-i18n="nav_avis"></a></li>
 <li><a href="#region" data-i18n="nav_region"></a></li>
@@ -446,6 +470,42 @@ background:var(--bone);padding:18px 28px;gap:14px;box-shadow:var(--shadow)}
 <div class="g"><picture><source srcset="images/salle-a-manger-3.webp" type="image/webp"><img src="images/salle-a-manger-3.jpg" alt="Salle a manger dressee" loading="lazy"></picture></div>
 <div class="g wide"><picture><source srcset="images/salon-cheminee-2.webp" type="image/webp"><img src="images/salon-cheminee-2.jpg" alt="Salon avec cheminee, autre angle" loading="lazy"></picture></div>
 <div class="g"><picture><source srcset="images/entree-escalier-2.webp" type="image/webp"><img src="images/entree-escalier-2.jpg" alt="Entree et escalier en bois, autre angle" loading="lazy"></picture></div>
+</div>
+</div>
+</section>
+
+<!-- ============ HIVER ============ -->
+<section class="winter" id="hiver">
+<div class="wrap split">
+<div class="reveal">
+<span class="eyebrow" data-i18n="win_eyebrow"></span>
+<h2 class="section-title" data-i18n="win_title"></h2>
+<p data-i18n="win_p"></p>
+<ul class="winter-moments">
+<li><em class="k">i.</em><div><b data-i18n="win_m1t"></b><span data-i18n="win_m1"></span></div></li>
+<li><em class="k">ii.</em><div><b data-i18n="win_m2t"></b><span data-i18n="win_m2"></span></div></li>
+<li><em class="k">iii.</em><div><b data-i18n="win_m3t"></b><span data-i18n="win_m3"></span></div></li>
+</ul>
+<a href="#reserver" class="btn" data-i18n="win_cta"></a>
+</div>
+<div class="figure-stack reveal">
+<div class="figure">
+<picture><source srcset="images/hiver-cheminee.webp" type="image/webp"><img src="images/hiver-cheminee.jpg" alt="Feu de bois dans la cheminee, bougies et aperitif sur la table basse" loading="lazy"></picture>
+</div>
+</div>
+</div>
+<div class="wrap">
+<div class="winter-grid reveal">
+<div class="tall"><picture><source srcset="images/hiver-coin-lampe.webp" type="image/webp"><img src="images/hiver-coin-lampe.jpg" alt="Coin salon sous les colombages, lampe allumee et tableaux anciens" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-table-diner.webp" type="image/webp"><img src="images/hiver-table-diner.jpg" alt="Table de diner aux chandelles, pichet vert et dahlias" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-vin-feu.webp" type="image/webp"><img src="images/hiver-vin-feu.jpg" alt="Bouteille au frais devant le feu de bois" loading="lazy"></picture></div>
+<div class="tall"><picture><source srcset="images/hiver-poele-fenetre.webp" type="image/webp"><img src="images/hiver-poele-fenetre.jpg" alt="Le poele a bois vu a travers une porte vitree" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-lampe.webp" type="image/webp"><img src="images/hiver-lampe.jpg" alt="Lampe ancienne et fruits de faience sur un mur de pierre" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-escalier.webp" type="image/webp"><img src="images/hiver-escalier.jpg" alt="Escalier en chene et balustres anciens a la lumiere du soir" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-carpaccio.webp" type="image/webp"><img src="images/hiver-carpaccio.jpg" alt="Carpaccio de Saint-Jacques servi dans une assiette ancienne" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-phare-honfleur.webp" type="image/webp"><img src="images/hiver-phare-honfleur.jpg" alt="Petit phare en pierre devant une gravure du port de Honfleur" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-bougies.webp" type="image/webp"><img src="images/hiver-bougies.jpg" alt="Bougies et objets chines sur une console en bois" loading="lazy"></picture></div>
+<div><picture><source srcset="images/hiver-escalier-ombres.webp" type="image/webp"><img src="images/hiver-escalier-ombres.jpg" alt="Ombres des balustres sur les marches en chene" loading="lazy"></picture></div>
 </div>
 </div>
 </section>
@@ -698,6 +758,7 @@ house_p2:"La maison a été construite par les grands-parents, avant d'être tra
 pool_eyebrow:"Le cœur des belles journées",pool_title:"Une piscine chauffée, rien que pour vous",
 pool_p:"Réservée à l'usage exclusif des voyageurs et entièrement sécurisée (clôture, portillon, rideau électrique), la piscine se profite en toute intimité de mai à septembre, face au calme de la campagne.",
 pool_s1:"mètres",pool_s2:"eau chauffée",pool_s3n:"Mai–Sept.",pool_s3:"saison de baignade",
+nav_winter:"L’hiver",win_eyebrow:"D’octobre à avril",win_title:"L’hiver, au coin du feu",win_p:"Quand la piscine se repose, la maison se révèle : poêle à bois qui crépite, bougies sur la poutre de la cheminée, lampes qui réchauffent les colombages. Une maison faite pour les longues soirées, les dîners qui s’éternisent et les retours de balade à Honfleur, les joues rougies par le vent.",win_m1t:"Le feu de bois",win_m1:"Le poêle vous attend, le bois est à disposition.",win_m2t:"La grande table",win_m2:"Dîners aux chandelles à sept, vaisselle ancienne et cuisine équipée.",win_m3t:"Les coins à soi",win_m3:"Lampes, livres et recoins sous les poutres pour lire ou ne rien faire.",win_cta:"Réserver un séjour d’hiver",
 gal_eyebrow:"En images",gal_title:"Au fil des pièces et du jardin",
 g_pool:"Piscine",g_living:"Salon & cheminée",g_kitchen:"Cuisine équipée",g_room:"Chambre",g_garden:"Jardin & terrasse",g_bath:"Salle de bain",
 amen_eyebrow:"Équipements & services",amen_title:"Tout pour un séjour serein",
@@ -759,6 +820,7 @@ house_p2:"The house was built by the grandparents, before being passed on to the
 pool_eyebrow:"The heart of fine days",pool_title:"A heated pool, all to yourselves",
 pool_p:"For the exclusive use of guests and fully secured (fence, gate, electric cover), the pool can be enjoyed in complete privacy from May to September, overlooking the quiet countryside.",
 pool_s1:"metres",pool_s2:"heated water",pool_s3n:"May–Sept.",pool_s3:"swimming season",
+nav_winter:"Winter",win_eyebrow:"October to April",win_title:"Winter, by the fire",win_p:"When the pool rests, the house comes into its own: a crackling wood stove, candles on the beam above the hearth, lamps warming the timber frame. A house made for long evenings, unhurried dinners and coming home from a walk in Honfleur with wind-flushed cheeks.",win_m1t:"The wood fire",win_m1:"The stove awaits you; firewood is provided.",win_m2t:"The long table",win_m2:"Candlelit dinners for seven, vintage tableware and a fully equipped kitchen.",win_m3t:"Corners of your own",win_m3:"Lamps, books and nooks under the beams to read or do nothing at all.",win_cta:"Book a winter stay",
 gal_eyebrow:"In pictures",gal_title:"Through the rooms and the garden",
 g_pool:"Pool",g_living:"Living room & fireplace",g_kitchen:"Fitted kitchen",g_room:"Bedroom",g_garden:"Garden & terrace",g_bath:"Bathroom",
 amen_eyebrow:"Amenities & services",amen_title:"Everything for a carefree stay",
@@ -820,6 +882,7 @@ house_p2:"Das Haus wurde von den Großeltern erbaut und später an ihre Kinder w
 pool_eyebrow:"Das Herz schöner Tage",pool_title:"Ein beheizter Pool, ganz für Sie",
 pool_p:"Ausschließlich den Gästen vorbehalten und vollständig gesichert (Zaun, Tor, elektrische Abdeckung), lässt sich der Pool von Mai bis September in voller Privatsphäre genießen, mit Blick auf die ruhige Landschaft.",
 pool_s1:"Meter",pool_s2:"beheiztes Wasser",pool_s3n:"Mai–Sept.",pool_s3:"Badesaison",
+nav_winter:"Winter",win_eyebrow:"Oktober bis April",win_title:"Winter am Kaminfeuer",win_p:"Wenn der Pool ruht, zeigt das Haus sein anderes Gesicht: ein knisternder Holzofen, Kerzen auf dem Kaminbalken, Lampen, die das Fachwerk wärmen. Ein Haus für lange Abende, ausgedehnte Abendessen und die Rückkehr vom Spaziergang in Honfleur mit windroten Wangen.",win_m1t:"Das Holzfeuer",win_m1:"Der Ofen wartet auf Sie, Brennholz ist vorhanden.",win_m2t:"Die große Tafel",win_m2:"Abendessen bei Kerzenlicht für sieben, altes Geschirr und voll ausgestattete Küche.",win_m3t:"Eigene Rückzugsorte",win_m3:"Lampen, Bücher und Nischen unter den Balken zum Lesen oder Nichtstun.",win_cta:"Einen Winteraufenthalt buchen",
 gal_eyebrow:"In Bildern",gal_title:"Durch die Räume und den Garten",
 g_pool:"Pool",g_living:"Wohnzimmer & Kamin",g_kitchen:"Einbauküche",g_room:"Schlafzimmer",g_garden:"Garten & Terrasse",g_bath:"Badezimmer",
 amen_eyebrow:"Ausstattung & Service",amen_title:"Alles für einen sorglosen Aufenthalt",
@@ -881,6 +944,7 @@ house_p2:"Huset byggdes av mor- och farföräldrarna innan det gick i arv till d
 pool_eyebrow:"Hjärtat i de fina dagarna",pool_title:"En uppvärmd pool, helt för er",
 pool_p:"Reserverad enbart för gästerna och helt säkrad (staket, grind, eldriven täckning) kan poolen njutas i full avskildhet från maj till september, med utsikt över den lugna landsbygden.",
 pool_s1:"meter",pool_s2:"uppvärmt vatten",pool_s3n:"Maj–sept.",pool_s3:"badsäsong",
+nav_winter:"Vintern",win_eyebrow:"Oktober till april",win_title:"Vinter vid brasan",win_p:"När poolen vilar visar huset sin andra sida: en sprakande vedkamin, ljus på spiselbjälken, lampor som värmer korsvirket. Ett hus för långa kvällar, utdragna middagar och att komma hem från en promenad i Honfleur med vindröda kinder.",win_m1t:"Brasan",win_m1:"Kaminen väntar på er, ved finns på plats.",win_m2t:"Det långa bordet",win_m2:"Middagar i levande ljus för sju, gammalt porslin och fullt utrustat kök.",win_m3t:"Egna vrår",win_m3:"Lampor, böcker och vrår under bjälkarna för att läsa eller bara vara.",win_cta:"Boka en vintervistelse",
 gal_eyebrow:"I bilder",gal_title:"Genom rummen och trädgården",
 g_pool:"Pool",g_living:"Vardagsrum & öppen spis",g_kitchen:"Fullt kök",g_room:"Sovrum",g_garden:"Trädgård & terrass",g_bath:"Badrum",
 amen_eyebrow:"Bekvämligheter & service",amen_title:"Allt för en bekymmersfri vistelse",
